@@ -19,51 +19,53 @@ vim.cmd([[
 ]])
 
 return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
+  use 'wbthomason/packer.nvim' -- PACKER PLUGIN MANAGER
   use 'folke/tokyonight.nvim' --THEME
   use {
-    'nvim-lualine/lualine.nvim',
+    'nvim-lualine/lualine.nvim', -- LUALINE STATUS BAR
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use {
-    'nvim-tree/nvim-tree.lua',
+    'nvim-tree/nvim-tree.lua', -- INTEGRATED EXPLORER
     requires = {
-      'nvim-tree/nvim-web-devicons', -- optional
+      'nvim-tree/nvim-web-devicons', -- OPTIONAL
     },
   }
-  use("christoomey/vim-tmux-navigator")
-  use("nvim-treesitter/nvim-treesitter")
-  use("p00f/nvim-ts-rainbow")
-  use {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig"
+  use("christoomey/vim-tmux-navigator") -- TMUX NAVIGATOR
+  use("nvim-treesitter/nvim-treesitter") -- TREESITTER
+  use("p00f/nvim-ts-rainbow") -- TS RAINBOW
+  use { -- MASON
+    "williamboman/mason.nvim", -- MASON
+    "williamboman/mason-lspconfig.nvim", -- MASON CONFIG
+    "neovim/nvim-lspconfig" -- VIM CONFIG
   }
-  -- LSP
-  use "hrsh7th/nvim-cmp"
-  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/nvim-cmp" -- CMP
+  use "hrsh7th/cmp-nvim-lsp" -- CMP LSP
   use "L3MON4D3/LuaSnip" -- SNIPPETS ENGINE
-  use "saadparwaiz1/cmp_luasnip"
-  use "rafamadriz/friendly-snippets"
+  use "saadparwaiz1/cmp_luasnip" -- LUASNIP
+  use "rafamadriz/friendly-snippets" -- BETTER SNIPPETS
   use "hrsh7th/cmp-path" -- FILE PATH
-
-  use "numToStr/Comment.nvim" --gcc/gcCOMMENT
-  use "windwp/nvim-autopairs" --AUTOPAIR
-
-  use "akinsho/bufferline.nvim"
-  use "lewis6991/gitsigns.nvim"
-
-  use "skywind3000/vim-terminal-help" --TERMINAL
-
+  use "numToStr/Comment.nvim" -- GCC/GCCOMMENT
+  use "windwp/nvim-autopairs" -- AUTOPAIR
+  use "akinsho/bufferline.nvim" -- BUFFER SWITCH
+  use "lewis6991/gitsigns.nvim" -- GIT STATUS
+  use "skywind3000/vim-terminal-help" -- TERMINAL HELPER
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
-  -- or                            , branch = '0.1.x',
+    'nvim-telescope/telescope.nvim', tag = '0.1.1', -- TELESCOPE SEARCH
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use({
-    "iamcco/markdown-preview.nvim",
+    "iamcco/markdown-preview.nvim", -- MARKDOWN PREVIEW
     run = function() vim.fn["mkdp#util#install"]() end,
   })
+  use {
+    'glepnir/dashboard-nvim', -- STARTUP DASHBOARD PAGE
+    event = 'VimEnter',
+    config = function()
+      require('plugins.dashboard')
+    end,
+    requires = {'nvim-tree/nvim-web-devicons'}
+  }
 
   if packer_bootstrap then
     require('packer').sync()

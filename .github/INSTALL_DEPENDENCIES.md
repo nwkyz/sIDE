@@ -95,7 +95,7 @@ sudo mkdir /usr/share/fonts/userf && sudo cp -r * /usr/share/fonts/userf && fc-c
 ```
 At last, **set** the font **as your terminal font**
 
-**NOTICE: Make sure the name of the font doesn't end with "Mono**  
+**NOTICE: Make sure the name of the font doesn't end with "Mono"**  
 **EXAMPLE:**  
 * **Choose "JetBrains Mono Nerd Font"**  
 * **and not ~~"JetBrains Mono Nerd Font Mono"~~**

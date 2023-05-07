@@ -4,9 +4,13 @@ sIDE can work on Windows/Linux/macOS and just follow the following steps to inst
 Don't worry, this will be easy.
 
 # For Linux Users
-#### 1. We need to install `neovim`, just choose the command below to execute depends on your distro (distribution):
+#### 1. We need to install `neovim` first
+**For Debian (or Ubuntu) users:**
+* Please download the 
+  
+**For other distros' users:** Just choose the command below to execute depends on your distro (distribution):
 ```
-# For Ubuntu/Debian based distros (e.g. ZorinOS, Deepin, Pop!_OS, MXLinux, VanillaOS etc.)
+# For Ubuntu based distros (e.g. ZorinOS, Deepin, Pop!_OS, VanillaOS etc.)
 sudo apt update && sudo apt install neovim python3-neovim
 
 # For Arch-like distros (e.g. Manjaro, EndeavourOS, Archcraft, KaOS etc.)

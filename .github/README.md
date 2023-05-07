@@ -46,3 +46,4 @@ alias side=nvim
 git clone https://github.com/nwkyz/sIDE.git $HOME\AppData\Local\nvim --depth 1 && nvim
 ```
 
+## **The Documentation Isn't Finished Just Now, To Be Continued**

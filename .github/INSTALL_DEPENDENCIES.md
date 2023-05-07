@@ -96,4 +96,4 @@ At last, **set** the font **as your terminal font**
 Simply like the installing in the first step, just add ` gcc` at the end of each command
 
 # For Windows Users
-
+# TO BE CONTINUED

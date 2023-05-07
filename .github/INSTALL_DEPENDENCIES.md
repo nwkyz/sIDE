@@ -4,9 +4,13 @@ sIDE can work on Windows/Linux/macOS and just follow the following steps to inst
 Don't worry, this will be easy.
 
 # For Linux Users
-#### 1. We need to install `neovim` first
+### 1. We need to install `neovim` first
 **For Debian (or Ubuntu) users:**
-* Please download the 
+* Please download the [nvim-0.10.0-dev-amd64.deb](https://github.com/nwkyz/sIDE/raw/main/.github/nvim-0.10.0-dev-amd64.deb) here first. And then, open terminal in your download folder and execute the command below:
+```
+sudo apt install ./nvim-0.10.0-dev-amd64.deb
+```
+This is because the official build in debian repository is too old to run sIDE.
   
 **For other distros' users:** Just choose the command below to execute depends on your distro (distribution):
 ```
@@ -79,7 +83,7 @@ sudo snap install --beta nvim --classic
 flatpak install flathub io.neovim.nvim
 ```
 
-#### 2. Install the NerdFont version of your preferred terminal font to show icons
+### 2. Install the NerdFont version of your preferred terminal font to show icons
 
 **Download** your preferred font here: [Nerd Font Downloads](https://www.nerdfonts.com/font-downloads)
 
@@ -87,7 +91,7 @@ flatpak install flathub io.neovim.nvim
 
 Then, Run the following command:
 ```
-mkdir /usr/share/fonts/userf && sudo cp -r * /usr/share/fonts/userf
+sudo mkdir /usr/share/fonts/userf && sudo cp -r * /usr/share/fonts/userf && fc-cache -fv
 ```
 At last, **set** the font **as your terminal font**
 
@@ -96,8 +100,8 @@ At last, **set** the font **as your terminal font**
 * **Choose "JetBrains Mono Nerd Font"**  
 * **and not ~~"JetBrains Mono Nerd Font Mono"~~**
 
-#### 3. Install the GCC compiler
+### 3. Install the GCC compiler
 Simply like the installing in the first step, just add ` gcc` at the end of each command
 
 # For Windows Users
-# TO BE CONTINUED
+TO BE CONTINUED

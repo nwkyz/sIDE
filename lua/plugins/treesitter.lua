@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   -- CONFIGURE LANGUAGES
-  ensure_installed = { "vim", "help", "bash", "c", "cpp", "javascript", "json", "lua", "python", "query", "html", "css", "markdown" },
+  ensure_installed = { "vim", "bash", "c", "cpp", "javascript", "json", "lua", "python", "query", "html", "css", "markdown" },
 
   highlight = { enable = true },
   indent = { enable = true },

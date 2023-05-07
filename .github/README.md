@@ -36,9 +36,9 @@ git clone https://github.com/nwkyz/sIDE.git ~/.config/nvim --depth 1 && nvim
 ```
 git clone https://ghproxy.com/https://github.com/nwkyz/sIDE.git ~/.config/nvim --depth 1 && nvim
 ```
-2. Then, you can run sIDE with `nvim`, also I recommend to add the following line to the end of your ~/.zshrc file if you're using zsh as your shell, so you can run sIDE with `side` command instead of `nvim`, which I think is more smooth to type:
+2. Then, you can run sIDE with command `nvim`, also I recommend to execute the following command if you're using zsh as your shell. Instead of using `nvim`, you can run sIDE with `side`, which I think is more smooth to type:
 ```
-alias side=nvim
+echo "alias side=nvim">>~/.zshrc
 ```
 
 ### For Windows Users

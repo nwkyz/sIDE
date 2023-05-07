@@ -22,6 +22,7 @@ Before we start, we should make sure we have the following necessary dependencie
 * Python3
 * neovim
 * The NerdFont version of your preferred terminal font
+* gcc/mingw compiler
 
 Don't worry, if you don't have these installed, just follow the dependencies installing guide: [Dependencies Installing Guide](./INSTALL_DEPENDENCIES.md).
 

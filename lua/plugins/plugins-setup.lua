@@ -19,53 +19,54 @@ vim.cmd([[
 ]])
 
 return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim' -- PACKER PLUGIN MANAGER
-  use 'folke/tokyonight.nvim' --THEME
+  use 'wbthomason/packer.nvim' -- 1 PACKER PLUGIN MANAGER
+  use 'folke/tokyonight.nvim' -- 2 THEME
   use {
-    'nvim-lualine/lualine.nvim', -- LUALINE STATUS BAR
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    'nvim-lualine/lualine.nvim', -- 3 LUALINE STATUS BAR
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true } -- 4 DEPENDENCIES: WEB-DEVICONS
   }
   use {
-    'nvim-tree/nvim-tree.lua', -- INTEGRATED EXPLORER
+    'nvim-tree/nvim-tree.lua', -- 5 INTEGRATED EXPLORER
     requires = {
-      'nvim-tree/nvim-web-devicons', -- OPTIONAL
+      'nvim-tree/nvim-web-devicons', -- 6 DEPENDENCIES: OPTIONAL
     },
   }
-  use("christoomey/vim-tmux-navigator") -- TMUX NAVIGATOR
-  use("nvim-treesitter/nvim-treesitter") -- TREESITTER
-  use("p00f/nvim-ts-rainbow") -- TS RAINBOW
+  use("christoomey/vim-tmux-navigator") -- 7 TMUX NAVIGATOR
+  use("nvim-treesitter/nvim-treesitter") -- 8 TREESITTER
+  use("p00f/nvim-ts-rainbow") -- 9 TS RAINBOW
   use { -- MASON
-    "williamboman/mason.nvim", -- MASON
-    "williamboman/mason-lspconfig.nvim", -- MASON CONFIG
-    "neovim/nvim-lspconfig" -- VIM CONFIG
+    "williamboman/mason.nvim", -- 10 MASON
+    "williamboman/mason-lspconfig.nvim", -- 11 MASON CONFIG
+    "neovim/nvim-lspconfig" -- 12 VIM CONFIG
   }
-  use "hrsh7th/nvim-cmp" -- CMP
-  use "hrsh7th/cmp-nvim-lsp" -- CMP LSP
-  use "L3MON4D3/LuaSnip" -- SNIPPETS ENGINE
-  use "saadparwaiz1/cmp_luasnip" -- LUASNIP
-  use "rafamadriz/friendly-snippets" -- BETTER SNIPPETS
-  use "hrsh7th/cmp-path" -- FILE PATH
-  use "numToStr/Comment.nvim" -- GCC/GCCOMMENT
-  use "windwp/nvim-autopairs" -- AUTOPAIR
-  use "akinsho/bufferline.nvim" -- BUFFER SWITCH
-  use "lewis6991/gitsigns.nvim" -- GIT STATUS
-  use "skywind3000/vim-terminal-help" -- TERMINAL HELPER
+  use "hrsh7th/nvim-cmp" -- 13 CMP
+  use "hrsh7th/cmp-nvim-lsp" -- 14 CMP LSP
+  use "L3MON4D3/LuaSnip" -- 15 SNIPPETS ENGINE
+  use "saadparwaiz1/cmp_luasnip" -- 16 LUASNIP
+  use "rafamadriz/friendly-snippets" -- 17 BETTER SNIPPETS
+  use "hrsh7th/cmp-path" -- 18 FILE PATH
+  use "numToStr/Comment.nvim" -- 19 GCC/GCCOMMENT
+  use "windwp/nvim-autopairs" -- 20 AUTOPAIR
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'} -- 21 BUFFER SWITCH
+  use "lewis6991/gitsigns.nvim" -- 22 GIT STATUS
+  use "skywind3000/vim-terminal-help" -- 23 TERMINAL HELPER
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1', -- TELESCOPE SEARCH
-    requires = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim', tag = '0.1.1', -- 24 TELESCOPE SEARCH
+    requires = { {'nvim-lua/plenary.nvim'} } -- 25 DEPENDENCIES: PLENARY
   }
   use({
-    "iamcco/markdown-preview.nvim", -- MARKDOWN PREVIEW
+    "iamcco/markdown-preview.nvim", -- 26 MARKDOWN PREVIEW
     run = function() vim.fn["mkdp#util#install"]() end,
   })
   use {
-    'glepnir/dashboard-nvim', -- STARTUP DASHBOARD PAGE
+    'glepnir/dashboard-nvim', -- 27 STARTUP DASHBOARD PAGE
     event = 'VimEnter',
     config = function()
       require('plugins.dashboard')
     end,
-    requires = {'nvim-tree/nvim-web-devicons'}
+    requires = {'nvim-tree/nvim-web-devicons'} -- 28 DEPENDENCIES WEB-DEVICONS
   }
+  use "Pocco81/auto-save.nvim" -- 29 AUTO-SAVE
 
   if packer_bootstrap then
     require('packer').sync()

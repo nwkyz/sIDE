@@ -13,6 +13,9 @@ require("plugins.autopairs")
 require("plugins.bufferline")
 require("plugins.gitsigns")
 require("plugins.telescope")
+require("plugins.auto-save")
 -- require("plugins.dashboard")
 -- require('plugins.vim-terminal-help')
 
+vim.o.titlestring="sIDE: %F %a %r %m"
+vim.cmd([[set title]])

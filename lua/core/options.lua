@@ -36,5 +36,3 @@ opt.signcolumn = "yes"
 
 -- Theming
 vim.cmd[[colorscheme tokyonight-moon]]
-
-

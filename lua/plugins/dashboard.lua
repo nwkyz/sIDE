@@ -2,6 +2,7 @@ local custom_banner = {
     "",
     "",
     "",
+    "",
     "       ▀████▀███▀▀▀██▄ ▀███▀▀▀███ ",
     "         ██   ██    ▀██▄ ██    ▀█ ",
     " ▄██▀███ ██   ██     ▀██ ██   █   ",
@@ -12,19 +13,21 @@ local custom_banner = {
     "",
     "",
     "",
+    "",
 }
 
 local footer = {
-    "THE PROJECT ISN'T COMPLETED. THIS IS JUST A DEMO. MADE BY EXHYZ"
+    "THE PROJECT ISN'T COMPLETED. THIS IS A PREVIEW VERSION OF ETHONWORK SIDE."
 }
 
 require('dashboard').setup {
     theme = 'doom',
+    shortcut_type = 'number',
     config = {
         header = custom_banner,
         center = {
             {
-                icon = '  ',
+                icon = '  ',
                 icon_hl = 'Title',
                 desc = 'Find File                 ',
                 desc_hl = 'String',
@@ -34,7 +37,7 @@ require('dashboard').setup {
                 action = 'lua print(2)'
             },
             {
-                icon = '󰉋  ',
+                icon = '  ',
                 icon_hl = 'Title',
                 desc = 'Integrated Explorer',
                 desc_hl = 'String',
@@ -44,7 +47,7 @@ require('dashboard').setup {
                 action = 'lua print(3)'
             },
             {
-                icon = '  ',
+                icon = '  ',
                 icon_hl = 'Title',
                 desc = 'Integrated Terminal',
                 desc_hl = 'String',
@@ -52,6 +55,46 @@ require('dashboard').setup {
                 keymap = 'SPC t',
                 key_hl = 'Number',
                 action = 'lua print(4)'
+            },
+            {
+                icon = '  ',
+                icon_hl = 'Title',
+                desc = 'Create New File',
+                desc_hl = 'String',
+                key = 'n',
+                keymap = 'SPC n',
+                key_hl = 'Number',
+                action = 'lua print(5)'
+            },
+            {
+                icon = '󰚰  ',
+                icon_hl = 'Title',
+                desc = 'Check Additions Update',
+                desc_hl = 'String',
+                key = 'u',
+                keymap = 'SPC u',
+                key_hl = 'Number',
+                action = 'lua print(6)'
+            },
+            {
+                icon = '  ',
+                icon_hl = 'Title',
+                desc = 'Return To Homepage',
+                desc_hl = 'String',
+                key = 'h',
+                keymap = 'SPC h',
+                key_hl = 'Number',
+                action = 'lua print(7)'
+            },
+            {
+                icon = '󰅚  ',
+                icon_hl = 'Title',
+                desc = 'Quit sIDE',
+                desc_hl = 'String',
+                key = 'q',
+                keymap = 'SPC q',
+                key_hl = 'Number',
+                action = 'lua print(8)'
             }
         },
         footer = footer  --your footer

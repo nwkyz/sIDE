@@ -26,3 +26,15 @@ keymap.set("n", "<leader><F8>", ":MarkdownPreview<CR>")
 keymap.set("n", "<leader><F9>", ":MarkdownPreviewStop<CR>")
 -- TOGGLE INTEGRATED TERMINAL
 keymap.set("n", "<leader>t", ":call TerminalToggle()<CR>")
+-- CHECK PLUGIN UPDATE
+keymap.set("n", "<leader>u", ":PackerSync<CR>")
+-- TOGGLE AUTO SAVE
+keymap.set("n", "<leader>a", ":ASToggle<CR>")
+-- BUFFERLINE CLOSE
+keymap.set("n", "<leader>c", ":bdelete<CR>")
+-- CREATE NEW BLANK BUFFER
+keymap.set("n", "<leader>n", ":enew<CR>")
+-- TURN TO DASHBOARD
+keymap.set("n", "<leader>h", ":Dashboard<CR>")
+-- QUIT
+keymap.set("n", "<leader>q", ":q<CR>")

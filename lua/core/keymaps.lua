@@ -38,3 +38,8 @@ keymap.set("n", "<leader>n", ":enew<CR>")
 keymap.set("n", "<leader>h", ":Dashboard<CR>")
 -- QUIT
 keymap.set("n", "<leader>q", ":q<CR>")
+-- SPELL CHECK
+keymap.set("n", "wc", "z=")
+keymap.set("n", "wd", "zg")
+keymap.set("n", "wn", "]s")
+keymap.set("n", "wp", "[s")

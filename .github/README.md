@@ -11,7 +11,7 @@
 # Introduction
 sIDE (softIDE) is a configuration for neovim to make it into an super-lightweight and fast IDE. It is easy to install, configure and use. Thanks to neovim, it can work on almost all the architectures and OSes.
 
-In the fastest way, only one line of command is needed to install sIDE.
+In the fastest way, only one line of command is needed to install sIDE. This is a fully step-by-step documentation and beginners can also easily install sIDE by following the steps, too.
 
 # Features
 * Blazing fast startup and executing

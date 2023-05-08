@@ -1,5 +1,12 @@
 ![softIDE](https://raw.githubusercontent.com/nwkyz/nwkyz-picbed/main/storage/title1-2.png)
 
+# CONTENTS
+* [**INTRODUCTION**](https://github.com/nwkyz/sIDE/tree/main#introduction)
+* [**FEATURES**](https://github.com/nwkyz/sIDE/tree/main#features)
+* [**INSTALLING DEPENDENCIES**](https://github.com/nwkyz/sIDE/blob/main/.github/INSTALL_DEPENDENCIES.md#dependencies-installing-guide)
+* [**QUICK INSTALL FOR LINUX/MACOS**](https://github.com/nwkyz/sIDE/tree/main#for-linux-and-macos-users)
+* [**QUICK INSTALL FOR WINDOWS**](https://github.com/nwkyz/sIDE/tree/main#for-windows-users)
+* [**UPDATING**](https://github.com/nwkyz/sIDE/tree/main#2-updating)
 
 # Introduction
 sIDE (softIDE) is a configuration for neovim to make it into an super-lightweight and fast IDE. It is easy to install, configure and use. Thanks to neovim, it can work on almost all the architectures and OSes.

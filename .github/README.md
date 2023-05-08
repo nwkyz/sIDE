@@ -14,14 +14,15 @@ sIDE (softIDE) is a configuration for neovim to make it into an super-lightweigh
 In the fastest way, only one line of command is needed to install sIDE.
 
 # Features
-* Super fast startup and executing
-* Everything are in a terminal window
+* Blazing fast startup and executing
+* Butter smooth interactive experience and animations
 * Integrated LSP (Language Server Protocol) code auto completion and highlight function
 * Beautiful user interface
 * Integrated spell check for all the languages
-* Refreshed keymap to make everything fast and elegant
+* Refreshed keymap makes everything fast and elegant
 * Integrated file management and terminal experience
 * Familiar vim/neovim keymap settings is also provided
+* Everything in a terminal window
 * ...More features will be added later. This currently is the preview version of the project
 
 # 0. Before We Start

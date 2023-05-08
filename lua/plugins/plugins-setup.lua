@@ -19,6 +19,7 @@ vim.cmd([[
 ]])
 
 return require('packer').startup(function(use)
+  -- CORE FUNCTIONS
   use 'wbthomason/packer.nvim' -- 1 PACKER PLUGIN MANAGER
   use 'folke/tokyonight.nvim' -- 2 THEME
   use {
@@ -66,7 +67,16 @@ return require('packer').startup(function(use)
     end,
     requires = {'nvim-tree/nvim-web-devicons'} -- 28 DEPENDENCIES WEB-DEVICONS
   }
-  use "Pocco81/auto-save.nvim" -- 29 AUTO-SAVE
+  use {"Pocco81/auto-save.nvim"} -- 29 AUTO-SAVE
+  use { 'gen740/SmoothCursor.nvim', -- 30 SMOOTH CURSOR
+    config = function()
+      require('smoothcursor').setup()
+    end
+  }
+  use {'psliwka/vim-smoothie'} -- 31 SMOOTH SCROLLING
+  use {'MunifTanjim/nui.nvim'} -- 32 NUI INTERFACE
+
+
 
   if packer_bootstrap then
     require('packer').sync()

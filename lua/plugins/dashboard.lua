@@ -13,11 +13,6 @@ local custom_banner = {
     "",
     "",
     "",
-    "",
-}
-
-local footer = {
-    "THE PROJECT ISN'T COMPLETED. THIS IS A PREVIEW VERSION OF ETHONWORK SIDE."
 }
 
 require('dashboard').setup {
@@ -97,6 +92,9 @@ require('dashboard').setup {
                 action = 'lua print(8)'
             }
         },
-        footer = footer  --your footer
+        footer = {
+            "",
+            "  sIDE Alpha-B0K102. Created by ExhYZ/Ethonwork"
+        }  --your footer
     }
 }

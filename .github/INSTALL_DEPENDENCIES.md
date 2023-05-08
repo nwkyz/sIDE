@@ -128,9 +128,9 @@ We can now go back to [Quick Install](https://github.com/nwkyz/sIDE/tree/main#1-
 
 # For Windows Users
 ### 1. Installing `git`, `python` and `neovim`
-Download the file [Git-2.40.1-64-bit.exe](https://github.com/git-for-windows/git/releases/download/v2.40.1.windows.1/Git-2.40.1-64-bit.exe) and install it. ( n_n)  
-Download the file [python-3.8.10-amd64.exe](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) and install it ( -.-)  
-Download the file [nvim-win64.msi](https://github.com/neovim/neovim/releases/download/stable/nvim-win64.msi) and install it ( -_-)  
+* Download the file [Git-2.40.1-64-bit.exe](https://github.com/git-for-windows/git/releases/download/v2.40.1.windows.1/Git-2.40.1-64-bit.exe) and install it. ( n_n)  
+* Download the file [python-3.8.10-amd64.exe](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) and install it ( -.-)  
+* Download the file [nvim-win64.msi](https://github.com/neovim/neovim/releases/download/stable/nvim-win64.msi) and install it ( -_-)  
 
 ### 2. Installing the NerdFont version of your preferred terminal font
 **NOTE: I recommend to use [Windows Terminal](https://aka.ms/terminal) as the default terminal. It is way much better than the default command prompt in Windows 7/8/8.1/10. And it has already been the default in Windows 11**  

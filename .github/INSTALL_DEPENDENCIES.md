@@ -7,7 +7,7 @@ Don't worry, this will be easy.
 * [**DEPENDENCIES LIST**](https://github.com/nwkyz/sIDE/blob/main/.github/INSTALL_DEPENDENCIES.md#dependencies-list)  
 * [**FOR LINUX USERS**](https://github.com/nwkyz/sIDE/blob/main/.github/INSTALL_DEPENDENCIES.md#for-linux-users)  
 * [**FOR WINDOWS USERS**](https://github.com/nwkyz/sIDE/blob/main/.github/INSTALL_DEPENDENCIES.md#for-windows-users)
-* [**FOR MACOS USERS**]()
+* [**FOR MACOS USERS**](https://github.com/nwkyz/sIDE/blob/main/.github/INSTALL_DEPENDENCIES.md#for-macos-users)
 
 # Dependencies List
 This is a list of the dependencies we need to install. Usually, you don't need to pay attention to these. If you have any problems, you can try to install them manually or submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues).

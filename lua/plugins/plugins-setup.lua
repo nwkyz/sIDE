@@ -74,7 +74,7 @@ return require('packer').startup(function(use)
     end
   }
   use {'psliwka/vim-smoothie'} -- 31 SMOOTH SCROLLING
-  use {'MunifTanjim/nui.nvim'} -- 32 NUI INTERFACE
+  use {'linty-org/key-menu.nvim'} -- KEY-MENU
 
 
 

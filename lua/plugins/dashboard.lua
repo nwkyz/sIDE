@@ -62,6 +62,16 @@ require('dashboard').setup {
                 action = 'lua print(5)'
             },
             {
+                icon = '  ',
+                icon_hl = 'Title',
+                desc = 'Show Keymaps',
+                desc_hl = 'String',
+                key = 'k',
+                keymap = 'SPC',
+                key_hl = 'Number',
+                action = 'lua print(6)'
+            },
+            {
                 icon = '󰚰  ',
                 icon_hl = 'Title',
                 desc = 'Check Additions Update',
@@ -69,7 +79,7 @@ require('dashboard').setup {
                 key = 'u',
                 keymap = 'SPC u',
                 key_hl = 'Number',
-                action = 'lua print(6)'
+                action = 'lua print(7)'
             },
             {
                 icon = '  ',
@@ -79,7 +89,7 @@ require('dashboard').setup {
                 key = 'h',
                 keymap = 'SPC h',
                 key_hl = 'Number',
-                action = 'lua print(7)'
+                action = 'lua print(8)'
             },
             {
                 icon = '󰅚  ',
@@ -89,12 +99,12 @@ require('dashboard').setup {
                 key = 'q',
                 keymap = 'SPC q',
                 key_hl = 'Number',
-                action = 'lua print(8)'
+                action = 'lua print(9)'
             }
         },
         footer = {
             "",
-            "  sIDE Alpha-B0K225. Created by ExhYZ/Ethonwork"
+            "  sIDE Alpha-B0K226. Created by ExhYZ/Ethonwork"
         }  --your footer
     }
 }

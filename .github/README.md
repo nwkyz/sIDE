@@ -22,7 +22,7 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 * Refreshed keymap makes everything fast and elegant
 * Integrated file management and terminal experience
 * Familiar vim/neovim keymap settings is also provided
-* Everything in a terminal window
+* Live easy to use keymap menu
 * ...More features will be added later. This currently is the preview version of the project
 
 # 0. Before We Start

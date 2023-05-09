@@ -12,3 +12,5 @@ vim.o.timeoutlen = 300
 setkey('n', '<leader>', {desc='sIDE Functions'})
 setkey('n', '<leader>f', {desc='Find'})
 setkey('n', '<leader>s', {desc='Split Window'})
+setkey("n", "<leader>c", {desc='Config'})
+setkey("n", "<leader>j", {desc='Jump To Tab'})

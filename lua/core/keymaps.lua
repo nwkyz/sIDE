@@ -28,16 +28,22 @@ keymap.set("n", "<leader><F9>", ":MarkdownPreviewStop<CR>", {desc='Stop MD Previ
 keymap.set("n", "<leader>t", ":call TerminalToggle()<CR>", {desc='Toggle Terminal'})
 -- CHECK PLUGIN UPDATE
 keymap.set("n", "<leader>u", ":PackerSync<CR>", {desc='Update Additions'})
+
+-- -- CONFIG
 -- TOGGLE AUTO SAVE
-keymap.set("n", "<leader>a", ":ASToggle<CR>", {desc='Toggle Autosave'})
--- CLOSE BUFFER
-keymap.set("n", "<leader>c", ":bdelete!<CR>", {desc='Close Buffer'})
+keymap.set("n", "<leader>ca", ":ASToggle<CR>", {desc='Config - Toggle Autosave'})
+-- LSP CONFIG
+keymap.set("n", "<leader>cl", ":Mason<CR>", {desc='Config - LSP Config'})
+
+-- -- FUNCTIONS
 -- CREATE NEW BLANK BUFFER
 keymap.set("n", "<leader>n", ":enew<CR>", {desc='Create New Buffer'})
 -- TURN TO DASHBOARD
 keymap.set("n", "<leader>h", ":Dashboard<CR>", {desc='Toggle Homepage'})
 -- QUIT
 keymap.set("n", "<leader>q", ":q<CR>", {desc='Quit'})
+--SAVE
+keymap.set("n", "<leader>w", ":w<CR>", {desc='Save'})
 -- SPELL CHECK
 keymap.set("n", "wc", "z=", {desc='Writer - Correct'})
 keymap.set("n", "wd", "zg", {desc='Writer - Add to dictionary'})

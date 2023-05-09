@@ -104,7 +104,7 @@ require('dashboard').setup {
         },
         footer = {
             "",
-            "  sIDE Alpha-B0K226. Created by ExhYZ/Ethonwork"
+            "  sIDE Alpha-B0K232. Created by ExhYZ/Ethonwork"
         }  --your footer
     }
 }

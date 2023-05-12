@@ -32,9 +32,9 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 * [ ] A better UI
 
 **IN PLANNING:**
-* [ ] Integrated resource fetching
-* [ ] AI copilot chat and code completion
-* [ ] Run AI copilot locally on your PC with Ethonwork Bailing LLM 
+* Integrated resource fetching
+* AI copilot chat and code completion
+* Run AI copilot locally on your PC with Ethonwork Bailing LLM 
 
 ...More features will be added later. This currently is the preview version of the project
 

@@ -21,7 +21,8 @@ vim.cmd([[
 return require('packer').startup(function(use)
   -- CORE FUNCTIONS
   use 'wbthomason/packer.nvim' -- 1 PACKER PLUGIN MANAGER
-  use 'folke/tokyonight.nvim' -- 2 THEME
+  --use 'folke/tokyonight.nvim' -- 2 THEME
+  use 'navarasu/onedark.nvim'
   use {
     'nvim-lualine/lualine.nvim', -- 3 LUALINE STATUS BAR
     requires = { 'kyazdani42/nvim-web-devicons', opt = true } -- 4 DEPENDENCIES: WEB-DEVICONS

@@ -49,3 +49,5 @@ keymap.set("n", "wc", "z=", {desc='Writer - Correct'})
 keymap.set("n", "wd", "zg", {desc='Writer - Add to dictionary'})
 keymap.set("n", "wn", "]s", {desc='Writer - Next Incorrect'})
 keymap.set("n", "wp", "[s", {desc='Writer - Previous Incorrect'})
+-- SWITCH THEME
+keymap.set("n", "<leader>p", ":lua require('onedark').toggle()<CR>", {desc='Change Theme'})

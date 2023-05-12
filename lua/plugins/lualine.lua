@@ -4,7 +4,7 @@ end
 
 require('lualine').setup {
   options = {
-    theme = 'tokyonight'
+    theme = 'onedark'
   },
   sections = {
     lualine_c = {'filesize'},

@@ -1,7 +1,7 @@
 require("plugins.plugins-setup")
 require("core.options")
 require("core.keymaps")
-
+require("plugins.themeswitch")
 -- PLUGINS
 require("plugins.lualine")
 require("plugins.nvim-tree")

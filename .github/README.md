@@ -14,16 +14,29 @@ sIDE (softIDE) is a configuration for neovim to make it into an super-lightweigh
 In the fastest way, only one line of command is needed to install sIDE. This is a fully step-by-step documentation and beginners can also easily install sIDE by following the steps, too.
 
 # Features
-* Blazing fast startup and executing
-* Butter smooth interactive experience and animations
-* Integrated LSP (Language Server Protocol) code auto completion and highlight function
-* Beautiful user interface
-* Integrated spell check for all the languages
-* Refreshed keymap makes everything fast and elegant
-* Integrated file management and terminal experience
-* Familiar vim/neovim keymap settings is also provided
-* Live easy to use keymap menu
-* ...More features will be added later. This currently is the preview version of the project
+**ALREADY MADE：**
+* [x] Blazing fast startup and executing
+* [x] Butter smooth interactive experience and animations
+* [x] Integrated LSP (Language Server Protocol) code auto completion and highlight function
+* [x] Beautiful user interface
+* [x] Integrated spell check for all the languages
+* [x] Refreshed keymap makes everything fast and elegant
+* [x] Integrated file management and terminal experience
+* [x] Familiar vim/neovim keymap settings is also provided
+* [x] Live easy to use keymap menu
+
+**STILL KEEP WORKING ON THEM:**
+* [ ] Better mouse and touchpad interactive experience
+* [ ] 60 FPS animation works in the terminal
+* [ ] Better multitask experience
+* [ ] A better UI
+
+**IN PLANNING:**
+* [ ] Integrated resource fetching
+* [ ] AI copilot chat and code completion
+* [ ] Run AI copilot locally on your PC with Ethonwork Bailing LLM 
+
+...More features will be added later. This currently is the preview version of the project
 
 # 0. Before We Start
 Before we start, we should make sure we have the following necessary dependencies:

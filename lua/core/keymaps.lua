@@ -51,3 +51,8 @@ keymap.set("n", "wn", "]s", {desc='Writer - Next Incorrect'})
 keymap.set("n", "wp", "[s", {desc='Writer - Previous Incorrect'})
 -- SWITCH THEME
 keymap.set("n", "<leader>p", ":lua require('onedark').toggle()<CR>", {desc='Change Theme'})
+-- TROUBLE
+keymap.set("n", "<leader>iv", ":TroubleToggle<CR>", {desc='Issues - View'})
+keymap.set("n", "<leader>if", ":TroubleToggle quickfix<CR>", {desc='Issues - Quickfix'})
+-- AI COPILOT
+keymap.set("n", "<leader>as", ":HFccSuggestion<CR>", {desc='AI - Suggestions'})

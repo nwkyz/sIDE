@@ -30,9 +30,10 @@ return require('packer').startup(function(use)
   use {
     'nvim-tree/nvim-tree.lua', -- 5 INTEGRATED EXPLORER
     requires = {
-      'nvim-tree/nvim-web-devicons', -- 6 DEPENDENCIES: OPTIONAL
+    --  'nvim-tree/nvim-web-devicons', -- 6 DEPENDENCIES: OPTIONAL
     },
   }
+  use('nvim-tree/nvim-web-devicons')
   use("christoomey/vim-tmux-navigator") -- 7 TMUX NAVIGATOR
   use("nvim-treesitter/nvim-treesitter") -- 8 TREESITTER
   use("p00f/nvim-ts-rainbow") -- 9 TS RAINBOW
@@ -76,8 +77,20 @@ return require('packer').startup(function(use)
   }
   use {'psliwka/vim-smoothie'} -- 31 SMOOTH SCROLLING
   use {'linty-org/key-menu.nvim'} -- KEY-MENU
-
-
+    use {
+        "folke/trouble.nvim",
+       -- requires = "kyazdani42/nvim-web-devicons",
+    }
+  use {
+    'huggingface/hfcc.nvim',
+    config = function()
+      require('hfcc').setup({
+        api_token = "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",
+        model = "bigcode/starcoder" -- can be a model ID or an http endpoint
+      })
+    end
+  }
+  use('alvan/vim-closetag')
 
   if packer_bootstrap then
     require('packer').sync()

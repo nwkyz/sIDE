@@ -17,6 +17,7 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 **ALREADY MADE：**
 * [x] Blazing fast startup and executing
 * [x] Butter smooth interactive experience and animations
+* [x] AI empowered suggestion and code auto-completion
 * [x] Integrated LSP (Language Server Protocol) code auto completion and highlight function
 * [x] Beautiful user interface
 * [x] Integrated spell check for all the languages
@@ -24,6 +25,7 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 * [x] Integrated file management and terminal experience
 * [x] Familiar vim/neovim keymap settings is also provided
 * [x] Live easy to use keymap menu
+* [x] Quick view and fix problems
 
 **STILL KEEP WORKING ON THEM:**
 * [ ] Better mouse and touchpad interactive experience
@@ -33,7 +35,6 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 
 **IN PLANNING:**
 * Integrated resource fetching
-* AI copilot chat and code completion
 * Run AI copilot locally on your PC with Ethonwork Bailing LLM 
 
 ...More features will be added later. This currently is the preview version of the project

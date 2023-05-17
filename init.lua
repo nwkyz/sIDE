@@ -13,19 +13,22 @@ require("plugins.cmp")
 require("plugins.comment")
 require("plugins.autopairs")
 require("plugins.bufferline")
+-- require("plugins.tabbar")
 require("plugins.gitsigns")
 require("plugins.telescope")
 require("plugins.auto-save")
 require("plugins.smooth-cursor")
 require("plugins.key-menu")
 require("plugins.trouble")
+require("plugins.newui")
+require("plugins.notify")
 -- require("plugins.ale")
 -- require("plugins.dashboard")
 -- require('plugins.vim-terminal-help')
 
-vim.o.titlestring="sIDE: %F %a %r %m"
+vim.o.titlestring="sIDE [ %F %a %r %m ]"
 vim.cmd([[set title]])
 vim.cmd([[set spelllang=en_us]])
 vim.cmd([[set spell]])
-
+vim.notify = require("notify")
 

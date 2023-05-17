@@ -51,6 +51,10 @@ return require('packer').startup(function(use)
   use "numToStr/Comment.nvim" -- 19 GCC/GCCOMMENT
   use "windwp/nvim-autopairs" -- 20 AUTOPAIR
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'} -- 21 BUFFER SWITCH
+  -- use {'romgrk/barbar.nvim', requires = { -- 21 TABBAR
+  --   'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+  --   'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+  -- }}
   use "lewis6991/gitsigns.nvim" -- 22 GIT STATUS
   use "skywind3000/vim-terminal-help" -- 23 TERMINAL HELPER
   use {
@@ -82,7 +86,7 @@ return require('packer').startup(function(use)
        -- requires = "kyazdani42/nvim-web-devicons",
     }
   use {
-    'huggingface/hfcc.nvim',
+    'huggingface/hfcc.nvim', -- 32 HUGGINGFACE AI
     config = function()
       require('hfcc').setup({
         api_token = "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",
@@ -90,7 +94,20 @@ return require('packer').startup(function(use)
       })
     end
   }
-  use('alvan/vim-closetag')
+  use('alvan/vim-closetag') -- 33 AUTO CLOSETAG
+  use('rcarriga/nvim-notify') -- 34 NOTIFY
+  use('MunifTanjim/nui.nvim') --35 NUI
+  use({ -- 36 REFRESHED UI
+    "folke/noice.nvim",
+    requires = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+    }
+  })
 
   if packer_bootstrap then
     require('packer').sync()

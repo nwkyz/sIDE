@@ -1,25 +1,25 @@
 vim.opt.termguicolors = true
 
 require("bufferline").setup {
-    options = {
-        -- INTEGRATED LSP
-        diagnostics = "nvim_lsp",
-        -- SPACE FOR NVIM-TREE
-        offsets = {{
-            filetype = "NvimTree",
-            text = "FILE EXPLORER",
-            highlight = "Directory",
-            text_align = "left"
-        }},
-        hover = {
-            enabled = true,
-            delay=200,
-            reveal = {'close'}
-        }
+  options = {
+    -- INTEGRATED LSP
+    diagnostics = "nvim_lsp",
+    -- SPACE FOR NVIM-TREE
+    offsets = {{
+      filetype = "NvimTree",
+      text = "FILE EXPLORER",
+      highlight = "Directory",
+      text_align = "left"
+    }},
+    hover = {
+      enabled = true,
+      delay=200,
+      reveal = {'close'}
     }
+  },
 }
 
--- SWITCH BETEWWN BUFFERS
+-- SWITCH BETWEEN BUFFERS
 vim.keymap.set("n", "<leader>j1", ":BufferLineGoToBuffer 1<CR>", {desc='Jump To Tab 1'}, {noremap = true, silent = true})
 vim.keymap.set("n", "<leader>j2", ":BufferLineGoToBuffer 2<CR>", {desc='Jump To Tab 2'}, {noremap = true, silent = true})
 vim.keymap.set("n", "<leader>j3", ":BufferLineGoToBuffer 3<CR>", {desc='Jump To Tab 3'}, {noremap = true, silent = true})

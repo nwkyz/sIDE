@@ -56,3 +56,7 @@ keymap.set("n", "<leader>iv", ":TroubleToggle<CR>", {desc='Issues - View'})
 keymap.set("n", "<leader>if", ":TroubleToggle quickfix<CR>", {desc='Issues - Quickfix'})
 -- AI COPILOT
 keymap.set("n", "<leader>as", ":HFccSuggestion<CR>", {desc='AI - Suggestions'})
+-- VIEW NOTIFY HISTORY
+keymap.set("n", "<leader>vn", ":Telescope notify<CR>", {desc='View - Notifications History'})
+-- CLEAR SPELL CHECKER HIGHLIGHT
+keymap.set("n", "<leader>cs", ":highlight clear SpellBad<CR>", {desc='Config - Clear Spell Checker Highlight'})

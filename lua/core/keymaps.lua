@@ -61,3 +61,7 @@ keymap.set("n", "<leader>as", ":HFccSuggestion<CR>", {desc='AI - Suggestions'})
 keymap.set("n", "<leader>vn", ":Notifications<CR>", {desc='View - Notifications History'})
 -- CLEAR SPELL CHECKER HIGHLIGHT
 keymap.set("n", "<leader>cs", ":highlight clear SpellBad<CR>", {desc='Config - Clear Spell Checker Highlight'})
+-- NEOGIT
+keymap.set("n", "<leader>gu", ":Neogit<CR>", {desc='Git - UI'})
+keymap.set("n", "<leader>gc", ":Neogit commit<CR>", {desc='Git - Commit'})
+

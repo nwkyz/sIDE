@@ -50,13 +50,14 @@ keymap.set("n", "wd", "zg", {desc='Writer - Add to dictionary'})
 keymap.set("n", "wn", "]s", {desc='Writer - Next Incorrect'})
 keymap.set("n", "wp", "[s", {desc='Writer - Previous Incorrect'})
 -- SWITCH THEME
-keymap.set("n", "<leader>p", ":lua require('onedark').toggle()<CR>", {desc='Change Theme'})
+keymap.set("n", "<leader>cd", ":set background=dark<CR>", {desc='Config - Theme - Dark'})
+keymap.set("n", "<leader>cl", ":set background=light<CR>", {desc='Config - Theme - Light'})
 -- TROUBLE
 keymap.set("n", "<leader>iv", ":TroubleToggle<CR>", {desc='Issues - View'})
 keymap.set("n", "<leader>if", ":TroubleToggle quickfix<CR>", {desc='Issues - Quickfix'})
 -- AI COPILOT
 keymap.set("n", "<leader>as", ":HFccSuggestion<CR>", {desc='AI - Suggestions'})
 -- VIEW NOTIFY HISTORY
-keymap.set("n", "<leader>vn", ":Telescope notify<CR>", {desc='View - Notifications History'})
+keymap.set("n", "<leader>vn", ":Notifications<CR>", {desc='View - Notifications History'})
 -- CLEAR SPELL CHECKER HIGHLIGHT
 keymap.set("n", "<leader>cs", ":highlight clear SpellBad<CR>", {desc='Config - Clear Spell Checker Highlight'})

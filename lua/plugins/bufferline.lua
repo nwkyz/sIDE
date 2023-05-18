@@ -1,22 +1,23 @@
 vim.opt.termguicolors = true
 
 require("bufferline").setup {
-  options = {
-    -- INTEGRATED LSP
-    diagnostics = "nvim_lsp",
-    -- SPACE FOR NVIM-TREE
-    offsets = {{
-      filetype = "NvimTree",
-      text = "FILE EXPLORER",
-      highlight = "Directory",
-      text_align = "left"
-    }},
-    hover = {
-      enabled = true,
-      delay=200,
-      reveal = {'close'}
-    }
-  },
+    highlights = require("catppuccin.groups.integrations.bufferline").get(),
+    options = {
+        -- INTEGRATED LSP
+        diagnostics = "nvim_lsp",
+        -- SPACE FOR NVIM-TREE
+        offsets = {{
+            filetype = "NvimTree",
+            text = "FILE EXPLORER",
+            highlight = "Directory",
+            text_align = "left"
+        }},
+        hover = {
+            enabled = true,
+            delay=200,
+            reveal = {'close'}
+        }
+    },
 }
 
 -- SWITCH BETWEEN BUFFERS

@@ -4,66 +4,66 @@ local keymap = vim.keymap
 
 -- -- VISUAL MODE
 -- MOVE CODE BLOCK
-keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+keymap.set("v", "J", "<cmd>m '>+1<CR>gv=gv")
+keymap.set("v", "K", "<cmd>m '<-2<CR>gv=gv")
 
 -- -- NORMAL MODE
 -- SPLIT WINDOW
 keymap.set("n", "<leader>wv", "<C-w>v", {desc='Window - Split Vertically'})
 keymap.set("n", "<leader>wh", "<C-w>s", {desc='Window - Split Horizontally'})
-keymap.set("n", "<leader>wm", ":lua require('maximize').toggle()<CR>", {desc='Window - Maximize'})
-keymap.set("n", "<leader>wc", ":bdelete!<CR>", {desc='Window - Close'})
+keymap.set("n", "<leader>wm", "<cmd>lua require('maximize').toggle()<CR>", {desc='Window - Maximize'})
+keymap.set("n", "<leader>wc", "<cmd>bdelete!<CR>", {desc='Window - Close'})
 
 -- DISABLE HIGHLIGHT
-keymap.set("n", "<leader>nh", ":nohl<CR>", {desc='Disable Highlight'})
+keymap.set("n", "<leader>nh", "<cmd>nohl<CR>", {desc='Disable Highlight'})
 
 -- -- PLUGINS
 -- NVIM-TREE
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", {desc='Toggle Explorer'})
+keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", {desc='Toggle Explorer'})
 -- BUFFER SWITCH
-keymap.set("n", "<S-L>", ":bnext<CR>", {desc='Tab Next'})
-keymap.set("n", "<S-H>", ":bprevious<CR>", {desc='Tab Previous'})
+keymap.set("n", "<S-L>", "<cmd>bnext<CR>", {desc='Tab Next'})
+keymap.set("n", "<S-H>", "<cmd>bprevious<CR>", {desc='Tab Previous'})
 -- MARKDOWN PREVIEW
-keymap.set("n", "<leader><F8>", ":MarkdownPreview<CR>", {desc='Start MD Preview'})
-keymap.set("n", "<leader><F9>", ":MarkdownPreviewStop<CR>", {desc='Stop MD Preview'})
+keymap.set("n", "<leader><F8>", "<cmd>MarkdownPreview<CR>", {desc='Start MD Preview'})
+keymap.set("n", "<leader><F9>", "<cmd>MarkdownPreviewStop<CR>", {desc='Stop MD Preview'})
 -- TOGGLE INTEGRATED TERMINAL
-keymap.set("n", "<leader>t", ":call TerminalToggle()<CR>", {desc='Toggle Terminal'})
+keymap.set("n", "<leader>t", "<cmd>call TerminalToggle()<CR>", {desc='Toggle Terminal'})
 -- CHECK PLUGIN UPDATE
-keymap.set("n", "<leader>u", ":PackerSync<CR>", {desc='Update Additions'})
+keymap.set("n", "<leader>u", "<cmd>PackerSync<CR>", {desc='Update Additions'})
 
 -- -- CONFIG
 -- TOGGLE AUTO SAVE
-keymap.set("n", "<leader>ca", ":ASToggle<CR>", {desc='Config - Toggle Autosave'})
+keymap.set("n", "<leader>ca", "<cmd>ASToggle<CR>", {desc='Config - Toggle Autosave'})
 -- LSP CONFIG
-keymap.set("n", "<leader>cl", ":Mason<CR>", {desc='Config - LSP Config'})
+keymap.set("n", "<leader>cl", "<cmd>Mason<CR>", {desc='Config - LSP Config'})
 
 -- -- FUNCTIONS
 -- CREATE NEW BLANK BUFFER
-keymap.set("n", "<leader>n", ":enew<CR>", {desc='Create New Buffer'})
+keymap.set("n", "<leader>n", "<cmd>enew<CR>", {desc='Create New Buffer'})
 -- TURN TO DASHBOARD
-keymap.set("n", "<leader>h", ":Dashboard<CR>", {desc='Toggle Homepage'})
+keymap.set("n", "<leader>h", "<cmd>Dashboard<CR>", {desc='Toggle Homepage'})
 -- QUIT
-keymap.set("n", "<leader>q", ":q<CR>", {desc='Quit'})
+keymap.set("n", "<leader>q", "<cmd>q<CR>", {desc='Quit'})
 --SAVE
-keymap.set("n", "<leader>s", ":w<CR>", {desc='Save'})
+keymap.set("n", "<leader>s", "<cmd>w<CR>", {desc='Save'})
 -- SPELL CHECK
 keymap.set("n", "wc", "z=", {desc='Writer - Correct'})
 keymap.set("n", "wd", "zg", {desc='Writer - Add to dictionary'})
 keymap.set("n", "wn", "]s", {desc='Writer - Next Incorrect'})
 keymap.set("n", "wp", "[s", {desc='Writer - Previous Incorrect'})
 -- SWITCH THEME
-keymap.set("n", "<leader>cd", ":set background=dark<CR>", {desc='Config - Theme - Dark'})
-keymap.set("n", "<leader>cl", ":set background=light<CR>", {desc='Config - Theme - Light'})
+keymap.set("n", "<leader>cd", "<cmd>set background=dark<CR>", {desc='Config - Theme - Dark'})
+keymap.set("n", "<leader>cl", "<cmd>set background=light<CR>", {desc='Config - Theme - Light'})
 -- TROUBLE
-keymap.set("n", "<leader>iv", ":TroubleToggle<CR>", {desc='Issues - View'})
-keymap.set("n", "<leader>if", ":TroubleToggle quickfix<CR>", {desc='Issues - Quickfix'})
+keymap.set("n", "<leader>iv", "<cmd>TroubleToggle<CR>", {desc='Issues - View'})
+keymap.set("n", "<leader>if", "<cmd>TroubleToggle quickfix<CR>", {desc='Issues - Quickfix'})
 -- AI COPILOT
-keymap.set("n", "<leader>as", ":HFccSuggestion<CR>", {desc='AI - Suggestions'})
+keymap.set("n", "<leader>as", "<cmd>HFccSuggestion<CR>", {desc='AI - Suggestions'})
 -- VIEW NOTIFY HISTORY
-keymap.set("n", "<leader>vn", ":Notifications<CR>", {desc='View - Notifications History'})
+keymap.set("n", "<leader>vn", "<cmd>Notifications<CR>", {desc='View - Notifications History'})
 -- CLEAR SPELL CHECKER HIGHLIGHT
-keymap.set("n", "<leader>cs", ":highlight clear SpellBad<CR>", {desc='Config - Clear Spell Checker Highlight'})
+keymap.set("n", "<leader>cs", "<cmd>highlight clear SpellBad<CR>", {desc='Config - Clear Spell Checker Highlight'})
 -- NEOGIT
-keymap.set("n", "<leader>gu", ":Neogit<CR>", {desc='Git - UI'})
-keymap.set("n", "<leader>gc", ":Neogit commit<CR>", {desc='Git - Commit'})
+keymap.set("n", "<leader>gu", "<cmd>Neogit<CR>", {desc='Git - UI'})
+keymap.set("n", "<leader>gc", "<cmd>Neogit commit<CR>", {desc='Git - Commit'})
 

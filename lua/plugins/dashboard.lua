@@ -29,7 +29,7 @@ require('dashboard').setup {
                 key = 'f',
                 keymap = 'SPC f f',
                 key_hl = 'Number',
-                action = 'lua print(2)'
+                action = 'lua print("Search files with key Space+F+F")'
             },
             {
                 icon = '  ',
@@ -39,7 +39,7 @@ require('dashboard').setup {
                 key = 'e',
                 keymap = 'SPC e',
                 key_hl = 'Number',
-                action = 'lua print(3)'
+                action = 'lua print("Open File Explorer with key Space+E")'
             },
             {
                 icon = '  ',
@@ -49,17 +49,17 @@ require('dashboard').setup {
                 key = 't',
                 keymap = 'SPC t',
                 key_hl = 'Number',
-                action = 'lua print(4)'
+                action = 'lua print("Open Terminal with key Space+T")'
             },
             {
                 icon = '  ',
                 icon_hl = 'Title',
-                desc = 'Create New File',
+                desc = 'Create New Buffer',
                 desc_hl = 'String',
                 key = 'n',
                 keymap = 'SPC n',
                 key_hl = 'Number',
-                action = 'lua print(5)'
+                action = 'lua print("Open Terminal with key Space+N")'
             },
             {
                 icon = '  ',
@@ -69,7 +69,7 @@ require('dashboard').setup {
                 key = 'k',
                 keymap = 'SPC',
                 key_hl = 'Number',
-                action = 'lua print(6)'
+                action = 'lua print("Hit Spacebar/G/W to show keymaps with the key")'
             },
             {
                 icon = '󰚰  ',
@@ -79,7 +79,7 @@ require('dashboard').setup {
                 key = 'u',
                 keymap = 'SPC u',
                 key_hl = 'Number',
-                action = 'lua print(7)'
+                action = 'lua print("Check additions update with key Space+U")'
             },
             {
                 icon = '  ',
@@ -89,7 +89,7 @@ require('dashboard').setup {
                 key = 'h',
                 keymap = 'SPC h',
                 key_hl = 'Number',
-                action = 'lua print(8)'
+                action = 'lua print("Return to this homepage with key Space+H")'
             },
             {
                 icon = '󰅚  ',
@@ -99,12 +99,12 @@ require('dashboard').setup {
                 key = 'q',
                 keymap = 'SPC q',
                 key_hl = 'Number',
-                action = 'lua print(9)'
+                action = 'lua print("Quit sIDE with key Space+Q")'
             }
         },
         footer = {
             "",
-            "  sIDE Alpha-B1K635. Created by ExhYZ/Ethonwork"
+            "  sIDE Alpha-B1K641. Created by ExhYZ/Ethonwork"
         }  --your footer
     }
 }

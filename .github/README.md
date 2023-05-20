@@ -17,9 +17,10 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 **ALREADY MADE：**
 * [x] Blazing fast startup and executing
 * [x] Butter smooth interactive experience and animations
-* [x] AI empowered suggestion and code auto-completion
+* [x] HF-AI empowered suggestion and code auto-completion
+* [x] Graphical git management
 * [x] Integrated LSP (Language Server Protocol) code auto completion and highlight function
-* [x] Beautiful user interface
+* [x] A better user interface
 * [x] Integrated spell check for all the languages
 * [x] Refreshed keymap makes everything fast and elegant
 * [x] Integrated file management and terminal experience
@@ -31,7 +32,6 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 * [ ] Better mouse and touchpad interactive experience
 * [ ] 60 FPS animation works in the terminal
 * [ ] Better multitask experience
-* [ ] A better UI
 
 **IN PLANNING:**
 * Integrated resource fetching

@@ -11,7 +11,7 @@ vim.o.timeoutlen = 300
 -- popup appear in Normal mode, after you press <Space>, after timeoutlen.
 setkey('n', '<leader>', {desc='sIDE Functions'})
 setkey('n', '<leader>f', {desc='Find'})
-setkey('n', '<leader>s', {desc='Split Window'})
+setkey('n', '<leader>w', {desc='Window'})
 setkey("n", "<leader>c", {desc='Config'})
 setkey("n", "<leader>j", {desc='Jump To Tab'})
 setkey("n", "<leader>i", {desc='Issues'})
@@ -19,3 +19,4 @@ setkey("n", "<leader>a", {desc='AI'})
 setkey("n", "<leader>v", {desc='View'})
 setkey("n", "<leader>g", {desc='Git'})
 setkey('n', 'g')
+setkey("n", "w")

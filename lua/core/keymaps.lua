@@ -9,8 +9,10 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- -- NORMAL MODE
 -- SPLIT WINDOW
-keymap.set("n", "<leader>sv", "<C-w>v", {desc='Split Vertically'}) --HORIZONAL
-keymap.set("n", "<leader>sh", "<C-w>s", {desc='Split Horizontally'}) --VERTICAL
+keymap.set("n", "<leader>wv", "<C-w>v", {desc='Window - Split Vertically'})
+keymap.set("n", "<leader>wh", "<C-w>s", {desc='Window - Split Horizontally'})
+keymap.set("n", "<leader>wm", ":lua require('maximize').toggle()<CR>", {desc='Window - Maximize'})
+keymap.set("n", "<leader>wc", ":bdelete!<CR>", {desc='Window - Close'})
 
 -- DISABLE HIGHLIGHT
 keymap.set("n", "<leader>nh", ":nohl<CR>", {desc='Disable Highlight'})
@@ -43,7 +45,7 @@ keymap.set("n", "<leader>h", ":Dashboard<CR>", {desc='Toggle Homepage'})
 -- QUIT
 keymap.set("n", "<leader>q", ":q<CR>", {desc='Quit'})
 --SAVE
-keymap.set("n", "<leader>w", ":w<CR>", {desc='Save'})
+keymap.set("n", "<leader>s", ":w<CR>", {desc='Save'})
 -- SPELL CHECK
 keymap.set("n", "wc", "z=", {desc='Writer - Correct'})
 keymap.set("n", "wd", "zg", {desc='Writer - Add to dictionary'})

@@ -18,6 +18,7 @@ opt.cursorline = true
 
 -- Enable Mouse Control
 opt.mouse:append("a")
+opt.mousemoveevent = true
 
 -- System Clipboard
 opt.clipboard:append("unnamedplus")

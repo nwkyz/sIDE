@@ -1,14 +1,28 @@
+local function maximize_status()
+    return vim.t.maximized and '   ' or '   '
+end
+
 local function getWords()
-  return tostring(vim.fn.wordcount().words)
+    return tostring(vim.fn.wordcount().words)
 end
 
 require('lualine').setup {
-  options = {
-    theme = 'catppuccin'
-  },
-  sections = {
-    lualine_c = {'filesize'},
-    lualine_y = {getWords, 'progress'}
-  }
+    options = {
+        theme = 'auto'
+    },
+    sections = {
+        lualine_c = {maximize_status},
+        lualine_x = {'fileformat', 'filetype'},
+        lualine_y = {'encoding', 'filesize', getWords, 'selectioncount'},
+        lualine_z = {'location', 'progress'}
+    },
+    inactive_sections = {
+        lualine_a = {},
+        lualine_b = {},
+        lualine_c = {'filename'},
+        lualine_x = {'location'},
+        lualine_y = {},
+        lualine_z = {}
+    },
 }
 

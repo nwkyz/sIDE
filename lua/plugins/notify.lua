@@ -1,5 +1,5 @@
 require('notify').setup {
-    fps = 30,
+    fps = 45,
     render = "compact",
     timeout = 3000,
     stages = "slide",

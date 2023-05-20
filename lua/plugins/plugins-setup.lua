@@ -96,15 +96,7 @@ return require('packer').startup(function(use)
         "folke/trouble.nvim",
         -- requires = "kyazdani42/nvim-web-devicons",
     }
-    use {
-        'huggingface/hfcc.nvim', -- 32 HUGGINGFACE AI
-        config = function()
-            require('hfcc').setup({
-                api_token = "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",
-                model = "bigcode/starcoder" -- can be a model ID or an http endpoint
-            })
-        end
-    }
+    use{'huggingface/hfcc.nvim'} -- 32 HF AI
     use('alvan/vim-closetag') -- 33 AUTO CLOSETAG
     use('rcarriga/nvim-notify') -- 34 NOTIFY
     use('MunifTanjim/nui.nvim') --35 NUI
@@ -120,6 +112,12 @@ return require('packer').startup(function(use)
         }
     })
     use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' } -- 37 GIT MANAGEMENT
+    use {
+        'declancm/maximize.nvim', -- 38 MAXIMIZE
+        config = function() require('maximize').setup {
+           default_keymaps = false -- Enable default keymaps. 
+        } end
+    }
 
     if packer_bootstrap then
         require('packer').sync()

@@ -5,6 +5,8 @@ require("bufferline").setup {
     options = {
         -- INTEGRATED LSP
         diagnostics = "nvim_lsp",
+        close_command = ":bdelete!",
+        buffer_close_icon = '󰅖',
         -- SPACE FOR NVIM-TREE
         offsets = {{
             filetype = "NvimTree",
@@ -14,7 +16,7 @@ require("bufferline").setup {
         }},
         hover = {
             enabled = true,
-            delay=200,
+            delay=0,
             reveal = {'close'}
         }
     },

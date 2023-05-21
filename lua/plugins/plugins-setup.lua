@@ -118,6 +118,7 @@ return require('packer').startup(function(use)
            default_keymaps = false -- Enable default keymaps. 
         } end
     }
+    use "lukas-reineke/indent-blankline.nvim" -- 39 INDENT LINE GUIDE
 
     if packer_bootstrap then
         require('packer').sync()

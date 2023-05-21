@@ -3,7 +3,7 @@ local custom_banner = {
     "",
     "",
     "",
-    "       ▀████▀███▀▀▀██▄ ▀███▀▀▀███   1K672",
+    "       ▀████▀███▀▀▀██▄ ▀███▀▀▀███   1K798",
     "         ██   ██    ▀██▄ ██    ▀█         ",
     " ▄██▀███ ██   ██     ▀██ ██   █           ",
     " ██   ▀▀ ██   ██      ██ ██████           ",
@@ -29,7 +29,7 @@ require('dashboard').setup {
                 key = 'f',
                 keymap = 'SPC f f',
                 key_hl = 'Number',
-                action = 'lua print("Search files with key Space+F+F")'
+                action = ':Telescope find_files'
             },
             {
                 icon = '  ',
@@ -39,7 +39,7 @@ require('dashboard').setup {
                 key = 'e',
                 keymap = 'SPC e',
                 key_hl = 'Number',
-                action = 'lua print("Open File Explorer with key Space+E")'
+                action = ':NvimTreeToggle'
             },
             {
                 icon = '  ',
@@ -49,7 +49,7 @@ require('dashboard').setup {
                 key = 't',
                 keymap = 'SPC t',
                 key_hl = 'Number',
-                action = 'lua print("Open Terminal with key Space+T")'
+                action = ':call TerminalToggle()'
             },
             {
                 icon = '  ',
@@ -59,7 +59,7 @@ require('dashboard').setup {
                 key = 'n',
                 keymap = 'SPC n',
                 key_hl = 'Number',
-                action = 'lua print("Open Terminal with key Space+N")'
+                action = ':enew'
             },
             {
                 icon = '  ',
@@ -79,7 +79,7 @@ require('dashboard').setup {
                 key = 'u',
                 keymap = 'SPC u',
                 key_hl = 'Number',
-                action = 'lua print("Check additions update with key Space+U")'
+                action = ':PackerSync'
             },
             {
                 icon = '  ',
@@ -89,7 +89,7 @@ require('dashboard').setup {
                 key = 'h',
                 keymap = 'SPC h',
                 key_hl = 'Number',
-                action = 'lua print("Return to this homepage with key Space+H")'
+                action = ':Dashboard'
             },
             {
                 icon = '󰅚  ',
@@ -99,7 +99,7 @@ require('dashboard').setup {
                 key = 'q',
                 keymap = 'SPC q',
                 key_hl = 'Number',
-                action = 'lua print("Quit sIDE with key Space+Q")'
+                action = ':q'
             }
         },
         footer = {

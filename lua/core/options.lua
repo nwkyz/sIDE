@@ -38,3 +38,6 @@ opt.signcolumn = "yes"
 -- Spell
 opt.spelllang = 'en_us'
 opt.spell = true
+
+-- INDENT LINE GUIDE
+vim.g.indent_blankline_filetype_exclude = {'dashboard'}

@@ -5,7 +5,7 @@ require("bufferline").setup {
     options = {
         -- INTEGRATED LSP
         diagnostics = "nvim_lsp",
-        close_command = ":bdelete!",
+        close_command = ":bdelete! %d",
         buffer_close_icon = '󰅖',
         -- SPACE FOR NVIM-TREE
         offsets = {{

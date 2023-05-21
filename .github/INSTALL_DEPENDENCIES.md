@@ -20,7 +20,7 @@ This is a list of the dependencies we need to install. Usually, you don't need t
 # For Linux Users
 ### 1. We need to install `neovim` and `git` first
 **For Debian 10 / 11 or older users:**
-* Please download the [nvim-linux64.deb](https://github.com/nwkyz/sIDE/raw/main/.github/nvim-0.10.0-dev-amd64.deb) here first. And then, open terminal in your download folder and execute the command below:
+* Please download the [nvim-linux64.deb](https://github.com/nwkyz/sIDE/blob/main/.github/nvim-linux64.deb) here first. And then, open terminal in your download folder and execute the command below:
 ```
 sudo apt install ./nvim-linux64.deb && sudo apt install git
 ```

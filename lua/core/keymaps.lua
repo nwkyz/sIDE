@@ -66,4 +66,13 @@ keymap.set("n", "<leader>cs", "<cmd>highlight clear SpellBad<CR>", {desc='Config
 -- NEOGIT
 keymap.set("n", "<leader>gu", "<cmd>Neogit<CR>", {desc='Git - UI'})
 keymap.set("n", "<leader>gc", "<cmd>Neogit commit<CR>", {desc='Git - Commit'})
-
+-- EXPLORER MAPPINGS
+local etapi = require('nvim-tree.api')
+keymap.set("n", "<leader>on", etapi.fs.create, {desc='New'})
+keymap.set("n", "<leader>or", etapi.fs.rename, {desc='Rename'})
+keymap.set("n", "<leader>od", etapi.fs.remove, {desc='Delete'})
+keymap.set("n", "<leader>oh", etapi.tree.toggle_hidden_filter, {desc='Show Dotfiles'})
+keymap.set("n", "<leader>oc", etapi.fs.copy.node, {desc='Copy'})
+keymap.set("n", "<leader>op", etapi.fs.paste, {desc='Paste'})
+keymap.set("n", "<leader>os", etapi.tree.search_node, {desc='Search'})
+keymap.set("n", "<leader>oo", etapi.node.run.system, {desc='Open With Default'})

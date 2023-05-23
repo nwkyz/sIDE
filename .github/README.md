@@ -15,26 +15,27 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 
 # Features
 **ALREADY MADE：**
-* [x] Blazing fast startup and executing
-* [x] Butter smooth interactive experience and animations
+* [x] Blazing fast startup and operation
+* [x] Silky smooth interactive experience and animations
 * [x] AI-powered suggestion and code auto-completion
-* [x] Graphical git management
-* [x] Integrated code auto completion and highlight function
-* [x] A better user interface
+* [x] Graphics git management interface
+* [x] Integrated code auto-completion and highlight function
+* [x] Better and beautiful user interface with Light / Dark theme
 * [x] Integrated spell check for all the languages
 * [x] Refreshed keymap makes everything fast and elegant
 * [x] Integrated file management and terminal experience
 * [x] Familiar vim/neovim keymap settings is also provided
-* [x] Live easy to use keymap menu
-* [x] Quick view and fix problems
+* [x] Quick and easy keymap float guide menu
+* [x] Quick troubleshoot experience
 
-**STILL KEEP WORKING ON THEM:**
+**STILL WORKING ON THEM:**
 * [ ] Better mouse and touchpad interactive experience
 * [ ] 60 FPS animation works in the terminal
 * [ ] Better multitask experience
 
 **IN PLANNING:**
 * Integrated resource fetching
+* Refreshed UI design
 * Run AI copilot locally on your PC with Ethonwork Bailing LLM 
 
 ...More features will be added later. This currently is the preview version of the project
@@ -46,6 +47,7 @@ Before we start, we should make sure we have the following necessary dependencie
 * neovim
 * The NerdFont version of your preferred terminal font
 * gcc/mingw compiler
+* NodeJS (npm) - Optional
 
 **⚠️  IMPORTANT:**  
 If you don't have these installed, just follow the dependencies installing guide.  

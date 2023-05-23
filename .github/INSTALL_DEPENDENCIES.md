@@ -115,9 +115,9 @@ At last, **set** the font **as your terminal font**
 * **Choose "JetBrains Mono Nerd Font"**  
 * **and not ~~"JetBrains Mono Nerd Font Mono"~~**
 
-### 3. Install the GCC compiler
-Simply like the installing in the first step, just add ` gcc` at the end of each command  
-**EXAMPLE: `sudo apt install gcc`**
+### 3. Installing other dependencies
+Simply like the installing in the first step, just add ` gcc nodejs npm` at the end of each command  
+**EXAMPLE: `sudo apt install gcc nodejs npm`**
 
 ### 4. Check
 Run the following command:

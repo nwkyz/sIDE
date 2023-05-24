@@ -41,3 +41,9 @@ opt.spell = true
 
 -- INDENT LINE GUIDE
 vim.g.indent_blankline_filetype_exclude = {'dashboard'}
+
+--BOOKMARKS SETUP
+vim.cmd([[highlight BookmarkSign ctermbg=NONE ctermfg=160]])
+vim.cmd([[highlight BookmarkLine ctermbg=194 ctermfg=NONE]])
+vim.g.bookmark_sign = '⚑'
+vim.g.bookmark_highlight_lines = 1

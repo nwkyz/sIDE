@@ -27,6 +27,7 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 * [x] Familiar vim/neovim keymap settings is also provided
 * [x] Quick and easy keymap float guide menu
 * [x] Quick troubleshoot experience
+* [x] Quick and elegant bookmark experience
 
 **STILL WORKING ON THEM:**
 * [ ] Better mouse and touchpad interactive experience

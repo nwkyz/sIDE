@@ -76,3 +76,13 @@ keymap.set("n", "<leader>oc", etapi.fs.copy.node, {desc='Copy'})
 keymap.set("n", "<leader>op", etapi.fs.paste, {desc='Paste'})
 keymap.set("n", "<leader>os", etapi.tree.search_node, {desc='Search'})
 keymap.set("n", "<leader>oo", etapi.node.run.system, {desc='Open With Default'})
+
+-- TOGGLE ILLUMINATE REUSED WORDS
+keymap.set("n","<leader>ci", "<cmd>IlluminateToggle<CR>", {desc='Config - Toggle Illuminate Reused Words'})
+
+-- BOOKMARKS
+keymap.set("n", "<leader>mt", "<cmd>BookmarkToggle<CR>", {desc='Bookmark - Toggle'})
+keymap.set("n", "<leader>ma", "<cmd>BookmarkAnnotate ", {desc='Bookmark - Annotation'})
+keymap.set("n", "<leader>mc", "<cmd>BookmarkClear<CR>", {desc='Bookmark - Clear All'})
+keymap.set("n", "<leader>ms", "<cmd>BookmarkShowAll<CR>", {desc='Bookmark - Bookmark Summary'})
+

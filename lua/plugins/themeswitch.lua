@@ -43,7 +43,8 @@ require("catppuccin").setup({
         treesitter = true,
         dashboard = true,
         neogit = true,
-        noice = true
+        noice = true,
+        illuminate = true
         --lualine = true
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },

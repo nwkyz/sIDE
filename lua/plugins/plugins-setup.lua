@@ -121,6 +121,8 @@ return require('packer').startup(function(use)
     use "lukas-reineke/indent-blankline.nvim" -- 39 INDENT LINE GUIDE
     use "RRethy/vim-illuminate" -- 40 ILLUMINATE USES
     use "MattesGroeger/vim-bookmarks" -- 41 BOOKMARKS EXTENSION
+    use "kevinhwang91/nvim-hlslens" -- 42 HLSLENS
+    use "dstein64/nvim-scrollview" -- 43 SCROLL BAR 
 
     if packer_bootstrap then
         require('packer').sync()

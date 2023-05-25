@@ -8,7 +8,8 @@ end
 
 require('lualine').setup {
     options = {
-        theme = 'auto'
+        theme = 'auto',
+        disabled_filetypes = { 'packer', 'NvimTree' }
     },
     sections = {
         lualine_c = {maximize_status},

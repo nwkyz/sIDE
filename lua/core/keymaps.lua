@@ -16,10 +16,11 @@ keymap.set("n", "<leader>wc", "<cmd>bdelete!<CR>", {desc='Window - Close'})
 
 -- DISABLE HIGHLIGHT
 keymap.set("n", "<leader>nh", "<cmd>nohl<CR>", {desc='Disable Highlight'})
+keymap.set("n", "<leader>chn", "<cmd>nohl<CR>", {desc='Highlight - Disable'})
 
 -- -- PLUGINS
 -- NVIM-TREE
-keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", {desc='Toggle Explorer'})
+keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", {desc='Explorer'})
 -- BUFFER SWITCH
 keymap.set("n", "<S-L>", "<cmd>bnext<CR>", {desc='Tab Next'})
 keymap.set("n", "<S-H>", "<cmd>bprevious<CR>", {desc='Tab Previous'})
@@ -41,7 +42,7 @@ keymap.set("n", "<leader>cl", "<cmd>Mason<CR>", {desc='Config - LSP Config'})
 -- CREATE NEW BLANK BUFFER
 keymap.set("n", "<leader>n", "<cmd>enew<CR>", {desc='Create New Buffer'})
 -- TURN TO DASHBOARD
-keymap.set("n", "<leader>h", "<cmd>Dashboard<CR>", {desc='Toggle Homepage'})
+keymap.set("n", "<leader>h", "<cmd>Dashboard<CR>", {desc='Homepage'})
 -- QUIT
 keymap.set("n", "<leader>q", "<cmd>q<CR>", {desc='Quit'})
 --SAVE
@@ -52,8 +53,8 @@ keymap.set("n", "wd", "zg", {desc='Writer - Add to dictionary'})
 keymap.set("n", "wn", "]s", {desc='Writer - Next Incorrect'})
 keymap.set("n", "wp", "[s", {desc='Writer - Previous Incorrect'})
 -- SWITCH THEME
-keymap.set("n", "<leader>cd", "<cmd>set background=dark<CR>", {desc='Config - Theme - Dark'})
-keymap.set("n", "<leader>cl", "<cmd>set background=light<CR>", {desc='Config - Theme - Light'})
+keymap.set("n", "<leader>ctd", "<cmd>set background=dark<CR>", {desc='Theme - Dark'})
+keymap.set("n", "<leader>ctl", "<cmd>set background=light<CR>", {desc='Theme - Light'})
 -- TROUBLE
 keymap.set("n", "<leader>iv", "<cmd>TroubleToggle<CR>", {desc='Issues - View'})
 keymap.set("n", "<leader>if", "<cmd>TroubleToggle quickfix<CR>", {desc='Issues - Quickfix'})
@@ -62,7 +63,7 @@ keymap.set("n", "<leader>as", "<cmd>HFccSuggestion<CR>", {desc='AI - Suggestions
 -- VIEW NOTIFY HISTORY
 keymap.set("n", "<leader>vn", "<cmd>Notifications<CR>", {desc='View - Notifications History'})
 -- CLEAR SPELL CHECKER HIGHLIGHT
-keymap.set("n", "<leader>cs", "<cmd>highlight clear SpellBad<CR>", {desc='Config - Clear Spell Checker Highlight'})
+keymap.set("n", "<leader>chc", "<cmd>highlight clear SpellBad<CR>", {desc='Highlight - Clear Spell Checker'})
 -- NEOGIT
 keymap.set("n", "<leader>gu", "<cmd>Neogit<CR>", {desc='Git - UI'})
 keymap.set("n", "<leader>gc", "<cmd>Neogit commit<CR>", {desc='Git - Commit'})
@@ -78,7 +79,7 @@ keymap.set("n", "<leader>os", etapi.tree.search_node, {desc='Search'})
 keymap.set("n", "<leader>oo", etapi.node.run.system, {desc='Open With Default'})
 
 -- TOGGLE ILLUMINATE REUSED WORDS
-keymap.set("n","<leader>ci", "<cmd>IlluminateToggle<CR>", {desc='Config - Toggle Illuminate Reused Words'})
+keymap.set("n","<leader>chr", "<cmd>IlluminateToggle<CR>", {desc='Highlight - Toggle Reused Words'})
 
 -- BOOKMARKS
 keymap.set("n", "<leader>mt", "<cmd>BookmarkToggle<CR>", {desc='Bookmark - Toggle'})
@@ -86,3 +87,10 @@ keymap.set("n", "<leader>ma", "<cmd>BookmarkAnnotate ", {desc='Bookmark - Annota
 keymap.set("n", "<leader>mc", "<cmd>BookmarkClear<CR>", {desc='Bookmark - Clear All'})
 keymap.set("n", "<leader>ms", "<cmd>BookmarkShowAll<CR>", {desc='Bookmark - Bookmark Summary'})
 
+-- HLSLENS
+keymap.set("n", "<leader>chs", "<cmd>HlSearchLensToggle<CR>", {desc='Highlight - Toggle Search'})
+
+-- BAR
+keymap.set("n", "<leader>cse", "<cmd>:ScrollViewEnable<CR>", {desc='Scrollbar - Enable'})
+keymap.set("n", "<leader>csd", "<cmd>:ScrollViewDisable<CR>", {desc='Scrollbar - Disable'})
+keymap.set("n", "<leader>css", "<cmd>:ScrollViewSync<CR>", {desc='Scrollbar - Sync'})

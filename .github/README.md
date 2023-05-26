@@ -20,7 +20,8 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 * [x] AI-powered suggestion and code auto-completion
 * [x] Graphics git management interface
 * [x] Integrated code auto-completion and LSP server
-* [x] Mouse-friendly and beautiful user interface with Light and Dark theme
+* [x] Beautiful user interface with Light and Dark theme
+* [x] Mouse and touchpad friendly operation experience with mouse gestures
 * [x] Integrated spell check for all the languages
 * [x] Refreshed keymap makes everything fast and elegant
 * [x] Integrated file management and terminal experience

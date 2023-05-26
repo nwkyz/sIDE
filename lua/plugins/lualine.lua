@@ -8,7 +8,7 @@ end
 
 require('lualine').setup {
     options = {
-        theme = 'auto',
+        theme = 'tokyonight',
         disabled_filetypes = { 'packer', 'NvimTree' }
     },
     sections = {

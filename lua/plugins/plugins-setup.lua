@@ -21,9 +21,9 @@ augroup end
 return require('packer').startup(function(use)
     -- CORE FUNCTIONS
     use 'wbthomason/packer.nvim' -- 1 PACKER PLUGIN MANAGER
-    -- use 'folke/tokyonight.nvim' -- 2 THEME
+    use 'folke/tokyonight.nvim' -- 2 THEME
     -- use 'navarasu/onedark.nvim'
-    use { "catppuccin/nvim", as = "catppuccin" }
+    -- use { "catppuccin/nvim", as = "catppuccin" }
     use {
         'nvim-lualine/lualine.nvim', -- 3 LUALINE STATUS BAR
         requires = { 'kyazdani42/nvim-web-devicons', opt = true } -- 4 DEPENDENCIES: WEB-DEVICONS
@@ -123,6 +123,7 @@ return require('packer').startup(function(use)
     use "MattesGroeger/vim-bookmarks" -- 41 BOOKMARKS EXTENSION
     use "kevinhwang91/nvim-hlslens" -- 42 HLSLENS
     use "dstein64/nvim-scrollview" -- 43 SCROLL BAR 
+    use "notomo/gesture.nvim" -- 44 MOUSE GESTURES
 
     if packer_bootstrap then
         require('packer').sync()

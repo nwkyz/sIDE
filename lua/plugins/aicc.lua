@@ -1,7 +1,7 @@
 local hfcc = require('hfcc')
 
 hfcc.setup({
-  api_token = "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", -- cf Install paragraph
+  api_token = "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", -- cf Install paragraph
   model = "bigcode/starcoder", -- can be a model ID or an http(s) endpoint
   -- parameters that are added to the request body
   query_params = {

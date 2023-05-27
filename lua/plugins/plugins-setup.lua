@@ -99,12 +99,12 @@ return require('packer').startup(function(use)
         }
     })
     use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' } -- 37 GIT MANAGEMENT
-    use {
+    --[[ use {
         'declancm/maximize.nvim', -- 38 MAXIMIZE
         config = function() require('maximize').setup {
            default_keymaps = false -- Enable default keymaps. 
         } end
-    }
+    } ]]--
     use "lukas-reineke/indent-blankline.nvim" -- 39 INDENT LINE GUIDE
     use "RRethy/vim-illuminate" -- 40 ILLUMINATE USES
     use "MattesGroeger/vim-bookmarks" -- 41 BOOKMARKS EXTENSION
@@ -112,6 +112,18 @@ return require('packer').startup(function(use)
     use "dstein64/nvim-scrollview" -- 43 SCROLL BAR 
     use "notomo/gesture.nvim" -- 44 MOUSE GESTURES
     use "famiu/bufdelete.nvim" -- 45 BDELETE ENHANCED
+    use { "anuvyklack/windows.nvim", -- 46 WINDOW MANAGEMENT
+        requires = {
+            "anuvyklack/middleclass",
+            "anuvyklack/animation.nvim"
+        },
+        config = function()
+            vim.o.winwidth = 10
+            vim.o.winminwidth = 10
+            vim.o.equalalways = false
+            require('windows').setup()
+        end
+    }
 
     if packer_bootstrap then
         require('packer').sync()

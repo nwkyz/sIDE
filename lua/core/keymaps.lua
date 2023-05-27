@@ -13,7 +13,7 @@ keymap.set("n", "<leader>d", ":Bd!<CR>", {desc='Close Window'})
 -- SPLIT WINDOW
 keymap.set("n", "<leader>wv", "<C-w>v", {desc='Window - Split Vertically'})
 keymap.set("n", "<leader>wh", "<C-w>s", {desc='Window - Split Horizontally'})
-keymap.set("n", "<leader>wm", "<cmd>lua require('maximize').toggle()<CR>", {desc='Window - Maximize'})
+keymap.set("n", "<leader>wm", "<cmd>WindowsMaximize<CR>", {desc='Window - Maximize'})
 keymap.set("n", "<leader>wc", "<cmd>bdelete!<CR>", {desc='Window - Close'})
 
 -- DISABLE HIGHLIGHT
@@ -23,11 +23,14 @@ keymap.set("n", "<leader>nh", "<cmd>nohl<CR>", {desc='Disable Highlight'})
 -- NVIM-TREE
 keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", {desc='Explorer'})
 -- BUFFER SWITCH
+keymap.set("n", "<S-L>", "<cmd>BufferNext<CR>", {desc='Window - Next'})
+keymap.set("n", "<S-H>", "<cmd>BufferPrevious<CR>", {desc='Window - Previous'})
 keymap.set("n", "<leader>wn", "<cmd>BufferNext<CR>", {desc='Window - Next'})
 keymap.set("n", "<leader>wp", "<cmd>BufferPrevious<CR>", {desc='Window - Previous'})
-keymap.set("n", "<leader>wmp", "<cmd>BufferMovePrevious<CR>", {desc='Move - To Previous'})
-keymap.set("n", "<leader>wmn", "<cmd>BufferMoveNext<CR>", {desc='Move - To Next'})
+keymap.set("n", "<leader>wsp", "<cmd>BufferMovePrevious<CR>", {desc='Move - To Previous'})
+keymap.set("n", "<leader>wsn", "<cmd>BufferMoveNext<CR>", {desc='Move - To Next'})
 keymap.set("n", "<leader>wf", "<cmd>BufferPin<CR>", {desc='Window - Pin'})
+keymap.set("n", "<leader>we", "<cmd>WindowsEqualize<CR>", {desc='Window - Equalize'})
 -- MARKDOWN PREVIEW
 keymap.set("n", "<leader><F8>", "<cmd>MarkdownPreview<CR>", {desc='Start MD Preview'})
 keymap.set("n", "<leader><F9>", "<cmd>MarkdownPreviewStop<CR>", {desc='Stop MD Preview'})
@@ -97,3 +100,5 @@ keymap.set("n", "<leader>ctl", "<cmd>set background=light<CR>", {desc='Theme - L
 keymap.set("n", "<leader>chc", "<cmd>highlight clear SpellBad<CR>", {desc='Highlight - Clear Spell Checker'})
 -- TOGGLE ILLUMINATE REUSED WORDS
 keymap.set("n", "<leader>chr", "<cmd>IlluminateToggle<CR>", {desc='Highlight - Toggle Reused Words'})
+-- AUTOWIDTH
+keymap.set("n", "<leader>cm", "<cmd>WindowsToggleAutowidth<CR>", {desc='Config - Toggle Autowidth'})

@@ -1,6 +1,6 @@
-local function maximize_status()
+--[[ local function maximize_status()
     return vim.t.maximized and '   ' or '   '
-end
+end ]]--
 
 local function getWords()
     return tostring(vim.fn.wordcount().words)
@@ -12,7 +12,7 @@ require('lualine').setup {
         disabled_filetypes = { 'packer', 'NvimTree' }
     },
     sections = {
-        lualine_c = {maximize_status},
+        -- lualine_c = {maximize_status},
         lualine_x = {'fileformat', 'filetype'},
         lualine_y = {'encoding', 'filesize', getWords, 'selectioncount'},
         lualine_z = {'location', 'progress'}

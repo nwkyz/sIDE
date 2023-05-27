@@ -51,14 +51,8 @@ return require('packer').startup(function(use)
     use "hrsh7th/cmp-path" -- 18 FILE PATH
     use "numToStr/Comment.nvim" -- 19 GCC/GCCOMMENT
     use "windwp/nvim-autopairs" -- 20 AUTOPAIR
-    use {
-        'akinsho/bufferline.nvim',
-        tag = "*", }-- 21 BUFFER SWITCH
-    -- use {'romgrk/barbar.nvim', requires = { -- 21 TABBAR
-    --   'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
-    --   'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
-    -- }}
-    -- use 'romgrk/barbar.nvim' -- 21 BUFFER SWITCH
+    -- use {'akinsho/bufferline.nvim', tag = "*", }-- 21 BUFFER SWITCH
+    use 'romgrk/barbar.nvim' -- 21 BUFFER SWITCH
     use "lewis6991/gitsigns.nvim" -- 22 GIT STATUS
     use "skywind3000/vim-terminal-help" -- 23 TERMINAL HELPER
     use {

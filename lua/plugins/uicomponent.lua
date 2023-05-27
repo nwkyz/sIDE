@@ -31,12 +31,12 @@ gesture.register({
 gesture.register({
     name = "NEXT TAB",
     inputs = { gesture.right() },
-    action = "bnext",
+    action = "BufferNext",
 })
 gesture.register({
     name = "PREVIOUS TAB",
     inputs = { gesture.left() },
-    action = "bprevious",
+    action = "BufferPrevious",
 })
 gesture.register({
     name = "GO BACK",

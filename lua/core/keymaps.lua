@@ -8,6 +8,8 @@ keymap.set("v", "J", "<cmd>m '>+1<CR>gv=gv")
 keymap.set("v", "K", "<cmd>m '<-2<CR>gv=gv")
 
 -- -- NORMAL MODE
+-- CLOSE
+keymap.set("n", "<leader>d", ":Bd!<CR>", {desc='Close Window'})
 -- SPLIT WINDOW
 keymap.set("n", "<leader>wv", "<C-w>v", {desc='Window - Split Vertically'})
 keymap.set("n", "<leader>wh", "<C-w>s", {desc='Window - Split Horizontally'})

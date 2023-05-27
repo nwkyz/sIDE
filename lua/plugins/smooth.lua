@@ -28,3 +28,5 @@ require('smoothcursor').setup({
     enabled_filetypes = nil,   -- example: { "lua", "vim" }
     disabled_filetypes = nil,  -- this option will be skipped if enabled_filetypes is set. example: { "TelescopePrompt", "NvimTree" } 
 })
+
+vim.g.smoothie_experimental_mappings = true

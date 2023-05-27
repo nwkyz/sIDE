@@ -4,7 +4,7 @@ require("bufferline").setup {
     options = {
         -- INTEGRATED LSP
         diagnostics = "nvim_lsp",
-        close_command = ":bdelete! %d",
+        close_command = ":Bdelete! %d",
         buffer_close_icon = '󰅖',
         -- SPACE FOR NVIM-TREE
         offsets = {{
@@ -13,11 +13,11 @@ require("bufferline").setup {
             highlight = "Directory",
             text_align = "left"
         }},
-        hover = {
+        --[[ hover = {
             enabled = true,
             delay=0,
             reveal = {'close'}
-        }
+        } ]]--
     },
 }
 
@@ -31,3 +31,4 @@ vim.keymap.set("n", "<leader>j6", ":BufferLineGoToBuffer 6<CR>", {desc='Jump To 
 vim.keymap.set("n", "<leader>j7", ":BufferLineGoToBuffer 7<CR>", {desc='Jump To Tab 7'}, {noremap = true, silent = true})
 vim.keymap.set("n", "<leader>j8", ":BufferLineGoToBuffer 8<CR>", {desc='Jump To Tab 8'}, {noremap = true, silent = true})
 vim.keymap.set("n", "<leader>j9", ":BufferLineGoToBuffer 9<CR>", {desc='Jump To Tab 9'}, {noremap = true, silent = true})
+

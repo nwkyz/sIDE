@@ -53,19 +53,12 @@ return require('packer').startup(function(use)
     use "windwp/nvim-autopairs" -- 20 AUTOPAIR
     use {
         'akinsho/bufferline.nvim',
-        tag = "*",
-        requires = 'nvim-tree/nvim-web-devicons',
-        -- after = "catppuccin",
-        -- config = function()
-        --     require("bufferline").setup {
-        --         highlights = require("catppuccin.groups.integrations.bufferline").get()
-        --     }
-        -- end
-    } -- 21 BUFFER SWITCH
+        tag = "*", }-- 21 BUFFER SWITCH
     -- use {'romgrk/barbar.nvim', requires = { -- 21 TABBAR
     --   'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
     --   'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
     -- }}
+    -- use 'romgrk/barbar.nvim' -- 21 BUFFER SWITCH
     use "lewis6991/gitsigns.nvim" -- 22 GIT STATUS
     use "skywind3000/vim-terminal-help" -- 23 TERMINAL HELPER
     use {
@@ -124,8 +117,10 @@ return require('packer').startup(function(use)
     use "kevinhwang91/nvim-hlslens" -- 42 HLSLENS
     use "dstein64/nvim-scrollview" -- 43 SCROLL BAR 
     use "notomo/gesture.nvim" -- 44 MOUSE GESTURES
+    use "famiu/bufdelete.nvim" -- 45 BDELETE ENHANCED
 
     if packer_bootstrap then
         require('packer').sync()
     end
 end)
+

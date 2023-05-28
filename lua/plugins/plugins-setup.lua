@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
         },
     }
     use('nvim-tree/nvim-web-devicons')
-    use("christoomey/vim-tmux-navigator") -- 7 TMUX NAVIGATOR
+    -- use("christoomey/vim-tmux-navigator") -- 7 TMUX NAVIGATOR
     use("nvim-treesitter/nvim-treesitter") -- 8 TREESITTER
     use("p00f/nvim-ts-rainbow") -- 9 TS RAINBOW
     use { -- MASON
@@ -117,12 +117,6 @@ return require('packer').startup(function(use)
             "anuvyklack/middleclass",
             "anuvyklack/animation.nvim"
         },
-        config = function()
-            vim.o.winwidth = 10
-            vim.o.winminwidth = 10
-            vim.o.equalalways = false
-            require('windows').setup()
-        end
     }
 
     if packer_bootstrap then

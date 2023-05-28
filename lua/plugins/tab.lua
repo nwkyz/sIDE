@@ -77,10 +77,10 @@ local nonecolor = ""
 
 vim.api.nvim_set_hl(0, 'BufferCurrentADDED', { fg = "#72d49a", bg = nonecolor })
 vim.api.nvim_set_hl(0, 'BufferCurrentCHANGED', { fg = "#3dbbff", bg = nonecolor })
-vim.api.nvim_set_hl(0, 'BufferCurrentDELETED', { fg = "#ff3d3d", bg = none })
-vim.api.nvim_set_hl(0, 'BufferInactiveADDED', { fg = "#4B9568", bg = none })
-vim.api.nvim_set_hl(0, 'BufferInactiveCHANGED', { fg = "#4A6180", bg = none })
-vim.api.nvim_set_hl(0, 'BufferInactiveDELETED', { fg = "#8E3332", bg = none })
+vim.api.nvim_set_hl(0, 'BufferCurrentDELETED', { fg = "#ff3d3d", bg = nonecolor })
+vim.api.nvim_set_hl(0, 'BufferInactiveADDED', { fg = "#4B9568", bg = nonecolor })
+vim.api.nvim_set_hl(0, 'BufferInactiveCHANGED', { fg = "#4A6180", bg = nonecolor })
+vim.api.nvim_set_hl(0, 'BufferInactiveDELETED', { fg = "#8E3332", bg = nonecolor })
 
 -- SWITCH BETWEEN BUFFERS
 vim.keymap.set("n", "<leader>j1", "<cmd>BufferGoto 1<CR>", {desc='Jump To Tab 1'}, {noremap = true, silent = true})

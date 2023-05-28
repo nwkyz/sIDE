@@ -1,11 +1,17 @@
+-- SEARCH LENS ===============================================
+
 require('hlslens').setup()
+
+-- SCROLL BAR ================================================
 
 require('scrollview').setup({
     excluded_filetypes = {'nerdtree'},
     current_only = true,
-    scrollview_refresh_time = 75,
+    scrollview_refresh_time = 100,
     scrollview_winblend = 35
 })
+
+-- MOUSE GESTURE =============================================
 
 vim.opt.mouse = "a"
 
@@ -46,3 +52,9 @@ gesture.register({
         vim.api.nvim_feedkeys(vim.keycode("<C-o>"), "n", true)
     end,
 })
+
+-- WINDOW ANIMATION ==========================================
+vim.o.winwidth = 10
+vim.o.winminwidth = 10
+vim.o.equalalways = false
+require('windows').setup()

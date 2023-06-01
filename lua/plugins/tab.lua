@@ -58,7 +58,7 @@ require'barbar'.setup {
 
         -- Configure the icons on the bufferline when modified or pinned.
         -- Supports all the base icon options.
-        modified = {button = '●'},
+        modified = {button = '󰛿 '},
         pinned = {button = '', filename = true},
 
         -- Use a preconfigured buffer appearance— can be 'default', 'powerline', or 'slanted'

@@ -58,3 +58,20 @@ vim.o.winwidth = 10
 vim.o.winminwidth = 10
 vim.o.equalalways = false
 require('windows').setup()
+
+-- INDENT LINE ===============================================
+vim.opt.list = true
+
+require("indent_blankline").setup {
+    show_end_of_line = false,
+    enabled = true,
+    colored_indent_levels = false
+}
+
+-- EXPLORER ==================================================
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+require("nvim-tree").setup()
+
+-- COMMENT ===================================================
+require('Comment').setup()

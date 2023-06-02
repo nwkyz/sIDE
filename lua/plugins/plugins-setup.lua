@@ -118,7 +118,6 @@ return require('packer').startup(function(use)
             "anuvyklack/animation.nvim"
         },
     }
-
     if packer_bootstrap then
         require('packer').sync()
     end

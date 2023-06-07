@@ -118,6 +118,9 @@ return require('packer').startup(function(use)
             "anuvyklack/animation.nvim"
         },
     }
+    use "lambdalisue/suda.vim" -- 47 AUTO ROOT
+    use "tyru/open-browser.vim" -- 48 OPEN BROWSER
+    use "weirongxu/plantuml-previewer.vim" -- 49 PLANTUML PREVIEW OPTIONAL
     if packer_bootstrap then
         require('packer').sync()
     end

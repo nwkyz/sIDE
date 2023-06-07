@@ -76,3 +76,7 @@ require("nvim-tree").setup()
 -- COMMENT ===================================================
 require('Comment').setup()
 
+-- SUDA ======================================================
+vim.cmd([[let g:suda#prompt = 'Enter your root password to save the protected file: ']])
+vim.g.suda_smart_edit = 1
+

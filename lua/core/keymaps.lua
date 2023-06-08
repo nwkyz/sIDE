@@ -33,10 +33,6 @@ keymap.set("n", "<leader>wsn", "<cmd>BufferMoveNext<CR>", {desc='Move - To Next'
 keymap.set("n", "<leader>wf", "<cmd>BufferPin<CR>", {desc='Window - Pin'})
 keymap.set("n", "<leader>we", "<cmd>WindowsEqualize<CR>", {desc='Window - Equalize'})
 
--- MARKDOWN PREVIEW
-keymap.set("n", "<leader><F8>", "<cmd>MarkdownPreview<CR>", {desc='Start MD Preview'})
-keymap.set("n", "<leader><F9>", "<cmd>MarkdownPreviewStop<CR>", {desc='Stop MD Preview'})
-
 -- TOGGLE INTEGRATED TERMINAL
 keymap.set("n", "<leader>t", "<cmd>call TerminalToggle()<CR>", {desc='Toggle Terminal'})
 
@@ -66,7 +62,7 @@ keymap.set("n", "<leader>vp", "<cmd>TroubleToggle<CR>", {desc='View - Problems'}
 keymap.set("n", "<leader>vf", "<cmd>TroubleToggle quickfix<CR>", {desc='View - Problems Quickfix'})
 
 -- AI COPILOT
-keymap.set("n", "<leader>as", "<cmd>HFccSuggestion<CR>", {desc='AI - Suggestions'})
+keymap.set("n", "<leader>a", "<cmd>HFccSuggestion<CR>", {desc='Copilot Suggest'})
 
 -- VIEW NOTIFY HISTORY
 keymap.set("n", "<leader>vn", "<cmd>Notifications<CR>", {desc='View - Notifications History'})
@@ -96,13 +92,13 @@ keymap.set("n", "<leader>ms", "<cmd>BookmarkShowAll<CR>", {desc='Bookmark - Book
 -- HLSLENS
 keymap.set("n", "<leader>chs", "<cmd>HlSearchLensToggle<CR>", {desc='Highlight - Toggle Search'})
 -- BAR
-keymap.set("n", "<leader>cse", "<cmd>:ScrollViewEnable<CR>", {desc='Scrollbar - Enable'})
-keymap.set("n", "<leader>csd", "<cmd>:ScrollViewDisable<CR>", {desc='Scrollbar - Disable'})
-keymap.set("n", "<leader>css", "<cmd>:ScrollViewSync<CR>", {desc='Scrollbar - Sync'})
+keymap.set("n", "<leader>cbe", "<cmd>:ScrollViewEnable<CR>", {desc='Scrollbar - Enable'})
+keymap.set("n", "<leader>cbd", "<cmd>:ScrollViewDisable<CR>", {desc='Scrollbar - Disable'})
+keymap.set("n", "<leader>cbs", "<cmd>:ScrollViewSync<CR>", {desc='Scrollbar - Sync'})
 -- DISABLE HIGHLIGHT
 keymap.set("n", "<leader>chn", "<cmd>nohl<CR>", {desc='Highlight - Disable'})
 -- TOGGLE AUTO SAVE
-keymap.set("n", "<leader>ca", "<cmd>ASToggle<CR>", {desc='Config - Toggle Autosave'})
+keymap.set("n", "<leader>cs", "<cmd>ASToggle<CR>", {desc='Config - Toggle Autosave'})
 -- LSP CONFIG
 keymap.set("n", "<leader>cl", "<cmd>Mason<CR>", {desc='Config - LSP Config'})
 -- SWITCH THEME
@@ -114,3 +110,13 @@ keymap.set("n", "<leader>chc", "<cmd>highlight clear SpellBad<CR>", {desc='Highl
 keymap.set("n", "<leader>chr", "<cmd>IlluminateToggle<CR>", {desc='Highlight - Toggle Reused Words'})
 -- AUTOWIDTH
 keymap.set("n", "<leader>cm", "<cmd>WindowsToggleAutowidth<CR>", {desc='Config - Toggle Autowidth'})
+-- AI COPILOT
+keymap.set("n", "<leader>ca", "<cmd>HFccToggleAutoSuggest<CR>", {desc='Config - Toggle Copilot Auto-fill'})
+
+-- -- EXTENSIONS =================================================
+-- MARKDOWN PREVIEW
+keymap.set("n", "<leader>pm", "<cmd>MarkdownPreviewToggle<CR>", {desc='Extensions - Markdown Preview'})
+-- PLANTUML PREVIEW
+keymap.set("n", "<leader>ppo", "<cmd>PlantumlOpen<CR>", {desc='PlantUML - Preview'})
+keymap.set("n", "<leader>ppp", "<cmd>PlantumlStop<CR>", {desc='PLantUML - Stop Preview'})
+keymap.set("n", "<leader>pps", ":PlantumlSave", {desc='PlantUML - Save to'})

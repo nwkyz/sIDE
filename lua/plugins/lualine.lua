@@ -8,6 +8,8 @@ end
 
 require('lualine').setup {
     options = {
+        component_separators = '|',
+        section_separators = '',
         theme = 'tokyonight',
         disabled_filetypes = { 'packer', 'NvimTree' }
     },

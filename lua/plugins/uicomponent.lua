@@ -80,3 +80,5 @@ require('Comment').setup()
 vim.cmd([[let g:suda#prompt = 'Enter your root password to save the protected file: ']])
 vim.g.suda_smart_edit = 1
 
+-- MARKDOWN PREVIEW ==========================================
+vim.g.mkdp_page_title = 'Preview of ${name} - sIDE'

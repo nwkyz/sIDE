@@ -16,22 +16,22 @@ This is a list of the dependencies we need to install. Usually, you don't need t
 3. Python 3
 4. The NerdFont version of your preferred terminal font
 5. gcc/mingw compiler
+6. NodeJS (npm) - Optional for LSP
+7. Java - Optional for PlantUML Preview
+8. PlantUML - Optional for PlantUML Preview
 
 # For Linux Users
 ### 1. We need to install `neovim` and `git` first
-**For Debian 10 / 11 or older users:**
-* Please download the [nvim-linux64.deb](https://github.com/nwkyz/sIDE/raw/main/.github/nvim-linux64.deb) here first. And then, open terminal in your download folder and execute the command below:
+**For Ubuntu and Debian based distro users *(e.g. ZorinOS, Deepin, VanillaOS, Pop!_OS etc.)*:**
+* Please **download** the [nvim-linux64.deb](https://github.com/nwkyz/sIDE/raw/main/.github/nvim-linux64.deb) here first. And then, **open terminal** in your download folder and **execute the command below** *(this is because the official build in debian/ubuntu repository is too old to run sIDE)*:
 ```bash
-sudo apt install ./nvim-linux64.deb && sudo apt install git
+sudo apt install ./nvim-linux64.deb && sudo apt install git python3
 ```
-This is because the official build in debian repository is too old to run sIDE.
-  
+* We also provided the **compiled RPM file here if you need: [nvim-linux64.rpm](https://github.com/nwkyz/sIDE/raw/main/.github/nvim-linux64.rpm)**
+
 **For other distros' users:**  
 * Just choose the command below to execute depends on your distro (*if the command runs into an error, check your Internet connection and try to use `python` instead of `python3` or you can submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues)*:
 ```bash
-# For Ubuntu based distros (e.g. ZorinOS, Deepin, Pop!_OS, VanillaOS etc.)
-sudo apt update && sudo apt install neovim python3-neovim git python3
-
 # For Arch-like distros (e.g. Manjaro, EndeavourOS, Archcraft, KaOS etc.)
 sudo pacman -Syu && sudo pacman -S neovim git python3
 

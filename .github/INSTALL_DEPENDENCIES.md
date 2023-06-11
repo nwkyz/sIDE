@@ -21,14 +21,14 @@ This is a list of the dependencies we need to install. Usually, you don't need t
 ### 1. We need to install `neovim` and `git` first
 **For Debian 10 / 11 or older users:**
 * Please download the [nvim-linux64.deb](https://github.com/nwkyz/sIDE/raw/main/.github/nvim-linux64.deb) here first. And then, open terminal in your download folder and execute the command below:
-```
+```bash
 sudo apt install ./nvim-linux64.deb && sudo apt install git
 ```
 This is because the official build in debian repository is too old to run sIDE.
   
 **For other distros' users:**  
 * Just choose the command below to execute depends on your distro (*if the command runs into an error, check your Internet connection and try to use `python` instead of `python3` or you can submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues)*:
-```
+```bash
 # For Ubuntu based distros (e.g. ZorinOS, Deepin, Pop!_OS, VanillaOS etc.)
 sudo apt update && sudo apt install neovim python3-neovim git python3
 
@@ -105,7 +105,7 @@ flatpak install flathub io.neovim.nvim
 **Extract** the zip file, **enter the folder** and **open the terminal** in the current directory.
 
 Then, Run the following command:
-```
+```bash
 sudo mkdir /usr/share/fonts/userf && sudo cp -r * /usr/share/fonts/userf && fc-cache -fv
 ```
 At last, **set** the font **as your terminal font**
@@ -121,7 +121,7 @@ Simply like the installing in the first step, just add ` gcc nodejs npm` at the 
 
 ### 4. Check
 Run the following command:
-```
+```bash
 git version && echo "  " && python3 --version && echo "  " && gcc --version && echo "  " && nvim --version
 ```
 We can now go back to [Quick Install](https://github.com/nwkyz/sIDE/tree/main#1-quick-install) if there's no error returned. If there's any problem you can't deal with, just submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues).
@@ -152,13 +152,13 @@ We can now go back to [Quick Install](https://github.com/nwkyz/sIDE/tree/main#1-
 # For macOS users
 ### 0. If you don't have Homebrew installed
 Just run the command below, it may takes a few minutes:
-```
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### 1. Install `git` `python` and `neovim`
 Run the command below:
-```
+```bash
 brew install git python3 neovim
 ```
 

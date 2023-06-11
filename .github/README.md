@@ -54,7 +54,6 @@ Before we start, we should make sure we have the following necessary dependencie
 **⚠️  IMPORTANT:**
 If you already installed a neovim configuration, you should backup your old configuration first or delete them.  
 It's in `~/.config/nvim` on Linux/macOS and `$HOME\AppData\Local\nvim` on Windows.
-Then
 
 **⚠️  IMPORTANT:**  
 If you don't have these installed, just follow the dependencies installing guide.  
@@ -63,34 +62,34 @@ But don't worry, it's easy: [**Dependencies Installing Guide**](./INSTALL_DEPEND
 # 1. Quick Install
 ### For Linux and macOS Users
 1. Just execute the command below **(NOTICE: If you're new to vim/neovim and don't know how to quit it, just hit `<space>+Q` to quit sIDE)**:
-```
+```bash
 git clone https://github.com/nwkyz/sIDE.git ~/.config/nvim --depth 1 && nvim
 ```
  **For Chinese users that can't reach github, run the following command instead:**
-```
+```bash
 git clone https://ghproxy.com/https://github.com/nwkyz/sIDE.git ~/.config/nvim --depth 1 && nvim
 ```
 2. Then, you can run sIDE with the `nvim` command, also I recommend to execute the following command if you're using zsh as your shell. Instead of using `nvim`, you can run sIDE with `side`, which I think is more smooth to type:
-```
+```bash
 echo "alias side=nvim">>~/.zshrc
 ```
 
 ### For Windows Users
 1. Just execute the command below **(NOTICE:If you're new to vim/neovim. You can hit `<space>+Q` to quit sIDE after installing)**:
-```
+```bash
 git clone https://github.com/nwkyz/sIDE.git $HOME\AppData\Local\nvim --depth 1 && nvim
 ```
 
 # 2. Updating
 ### For Linux and macOS Users
 Execute the command below:
-```
+```bash
 cd ~/.config/nvim && git pull && cd
 ```
 
 ### For Windows Users
 Execute the command below:
-```
+```bash
 cd $HOME\AppData\Local\nvim && git pull && cd $HOME\
 ```
 

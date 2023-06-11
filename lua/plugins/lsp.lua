@@ -28,5 +28,5 @@ require("mason-lspconfig").setup_handlers {
         require("lspconfig")[server_name].setup {}
     end,
     -- Next, you can provide a dedicated handler for specific servers.
-    -- For example, a handler override for the `rust_analyzer`:
+    -- For example, a handler override for the `rust_analyzer`: 
 }

@@ -87,9 +87,9 @@ pkg install neovim git python3
 pkg_add neovim git python3
 
 # For Android / Android based distros
-  - Download Termux at https://play.google.com/store/apps/details?id=com.termux&pli=# 
-  - Then run in Termux app:
-    pkg install python neovim git python3
+#  - Download Termux at https://play.google.com/store/apps/details?id=com.termux&pli=# 
+#  - Then run in Termux app:
+     pkg install python neovim git python3
 
 # Install neovim via Snap
 sudo snap install --beta nvim --classic

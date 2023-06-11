@@ -47,7 +47,14 @@ Before we start, we should make sure we have the following necessary dependencie
 * neovim
 * The NerdFont version of your preferred terminal font
 * gcc/mingw compiler
-* NodeJS (npm) - Optional
+* NodeJS (npm) - Optional for LSP
+* Java - Optional for PlantUML Preview
+* PlantUML - Optional for PlantUML Preview 
+
+**⚠️  IMPORTANT:**
+If you already installed a neovim configuration, you should backup your old configuration first or delete them.  
+It's in `~/.config/nvim` on Linux/macOS and `$HOME\AppData\Local\nvim` on Windows.
+Then
 
 **⚠️  IMPORTANT:**  
 If you don't have these installed, just follow the dependencies installing guide.  
@@ -63,7 +70,7 @@ git clone https://github.com/nwkyz/sIDE.git ~/.config/nvim --depth 1 && nvim
 ```
 git clone https://ghproxy.com/https://github.com/nwkyz/sIDE.git ~/.config/nvim --depth 1 && nvim
 ```
-2. Then, you can run sIDE with the command `nvim`, also I recommend to execute the following command if you're using zsh as your shell. Instead of using `nvim`, you can run sIDE with `side`, which I think is more smooth to type:
+2. Then, you can run sIDE with the `nvim` command, also I recommend to execute the following command if you're using zsh as your shell. Instead of using `nvim`, you can run sIDE with `side`, which I think is more smooth to type:
 ```
 echo "alias side=nvim">>~/.zshrc
 ```
@@ -76,13 +83,16 @@ git clone https://github.com/nwkyz/sIDE.git $HOME\AppData\Local\nvim --depth 1 &
 
 # 2. Updating
 ### For Linux and macOS Users
-1. Execute the command below:
+Execute the command below:
 ```
 cd ~/.config/nvim && git pull && cd
 ```
 
 ### For Windows Users
+Execute the command below:
 ```
 cd $HOME\AppData\Local\nvim && git pull && cd $HOME\
 ```
-## **The Documentation Isn't Finished Just Now, To Be Continued**
+
+
+**More content will be added into the documentation later.**

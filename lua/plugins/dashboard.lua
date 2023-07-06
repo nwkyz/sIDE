@@ -13,7 +13,7 @@ local custom_banner = {
     "⣿⣿⣿⣄⣀⣀⣀⣠⣿⣿⡟⠀⢠⣤⣤⣤⣿⣿⣿⣤⣤⣤⡄⠀⣿⣿⣿⣤⣤⣤⣴⣿⣿⣿⠇⠀⢸⣿⣿⣧⣤⣤⣤⣤⣤⣤⣤",
     "⠈⠻⢿⣿⣿⣿⣿⣿⡿⠟⠁⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⣿⣿⣿⣿⣿⣿⣿⠿⠛⠁⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿",
     "",
-    " FINAL (6K)",
+    " 8K401",
     "",
 }
 
@@ -66,7 +66,7 @@ require('dashboard').setup {
             {
                 icon = '  ',
                 icon_hl = 'Title',
-                desc = 'Show Keymaps',
+                desc = 'Shortcut Keys & Configs',
                 desc_hl = 'String',
                 key = 'k',
                 keymap = 'SPC',
@@ -106,7 +106,7 @@ require('dashboard').setup {
         },
         footer = {
             "",
-            "  The project is currently in alpha stage, by ExhYZ@Ethonwork"
+            "  The project is currently in dev now, from ExhYZ@Ethonwork."
         }  --your footer
     }
 }

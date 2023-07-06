@@ -3,7 +3,7 @@ sIDE can work on Windows/Linux/macOS/BSD and other OSes. Just follow the followi
 
 Don't worry, this will be easy.
 
-# CONTENTS
+# Contents
 * [**DEPENDENCIES LIST**](https://github.com/nwkyz/sIDE/blob/main/.github/INSTALL_DEPENDENCIES.md#dependencies-list)  
 * [**FOR LINUX USERS**](https://github.com/nwkyz/sIDE/blob/main/.github/INSTALL_DEPENDENCIES.md#for-linux-users)  
 * [**FOR WINDOWS USERS**](https://github.com/nwkyz/sIDE/blob/main/.github/INSTALL_DEPENDENCIES.md#for-windows-users)

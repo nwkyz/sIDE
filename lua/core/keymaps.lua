@@ -111,7 +111,9 @@ keymap.set("n", "<leader>chr", "<cmd>IlluminateToggle<CR>", {desc='Highlight - T
 -- AUTOWIDTH
 keymap.set("n", "<leader>cm", "<cmd>WindowsToggleAutowidth<CR>", {desc='Config - Toggle Autowidth'})
 -- AI COPILOT
-keymap.set("n", "<leader>ca", "<cmd>HFccToggleAutoSuggest<CR>", {desc='Config - Toggle Copilot Auto-fill'})
+keymap.set("n", "<leader>ca", "<cmd>HFccToggleAutoSuggest<CR>", {desc='Config - Toggle Copilot Auto Suggest'})
+-- INLINE FOLD
+keymap.set("n", "<leader>cf", "<cmd>ToggleInlineFold<CR>", {desc='Config - Toggle Inline Fold'})
 
 -- -- EXTENSIONS =================================================
 -- MARKDOWN PREVIEW

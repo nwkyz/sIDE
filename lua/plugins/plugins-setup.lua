@@ -122,6 +122,7 @@ return require('packer').startup(function(use)
     use "lambdalisue/suda.vim" -- 47 AUTO ROOT
     use "tyru/open-browser.vim" -- 48 OPEN BROWSER
     use "weirongxu/plantuml-previewer.vim" -- 49 PLANTUML PREVIEW OPTIONAL
+    use "malbertzard/inline-fold.nvim" -- 50 INLINE FOLD
     if packer_bootstrap then
         require('packer').sync()
     end

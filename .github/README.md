@@ -1,6 +1,6 @@
 ![softIDE](https://raw.githubusercontent.com/nwkyz/nwkyz-picbed/main/storage/header.png)
 
-# CONTENTS
+# Contents
 * [**INTRODUCTION**](https://github.com/nwkyz/sIDE/tree/main#introduction)
 * [**FEATURES**](https://github.com/nwkyz/sIDE/tree/main#features)
 * [**INSTALLING DEPENDENCIES**](https://github.com/nwkyz/sIDE/blob/main/.github/INSTALL_DEPENDENCIES.md#dependencies-installing-guide)

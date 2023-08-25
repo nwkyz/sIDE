@@ -7,3 +7,5 @@ require('gitsigns').setup {
     changedelete = { text = '~' },
   },
 }
+
+--GIT

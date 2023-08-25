@@ -37,7 +37,8 @@ keymap.set("n", "<leader>we", "<cmd>WindowsEqualize<CR>", {desc='Window - Equali
 keymap.set("n", "<leader>t", "<cmd>call TerminalToggle()<CR>", {desc='Toggle Terminal'})
 
 -- CHECK PLUGIN UPDATE
-keymap.set("n", "<leader>u", "<cmd>PackerSync<CR>", {desc='Update Additions'})
+keymap.set("n", "<leader>ua", "<cmd>PackerSync<CR>", {desc='Update - Additions'})
+keymap.set("n", "<leader>ut", "<cmd>TSUpdate<CR>", {desc='Update - Treesitter'})
 
 -- CREATE NEW BLANK BUFFER
 keymap.set("n", "<leader>n", "<cmd>enew<CR>", {desc='Create New Buffer'})
@@ -46,11 +47,11 @@ keymap.set("n", "<leader>n", "<cmd>enew<CR>", {desc='Create New Buffer'})
 keymap.set("n", "<leader>h", "<cmd>Dashboard<CR>", {desc='Homepage'})
 
 -- QUIT
-keymap.set("n", "<leader>q", "<cmd>q!<CR>", {desc='Quit'})
+keymap.set("n", "<leader>q", "<cmd>q<CR>", {desc='Quit'})
 
+--MODIFIED
 --SAVE
-keymap.set("n", "<leader>s", "<cmd>w!<CR>", {desc='Save'})
-keymap.set("n", "<leader>b", "<cmd>wq!<CR>", {desc='Force Save and Quit'})
+keymap.set("n", "<leader>s", "<cmd>w!<CR>", {desc='Force Save'})
 
 -- SPELL CHECK
 keymap.set("n", "wc", "z=", {desc='Writer - Correct'})
@@ -118,8 +119,8 @@ keymap.set("n", "<leader>cf", "<cmd>ToggleInlineFold<CR>", {desc='Config - Toggl
 
 -- -- EXTENSIONS =================================================
 -- MARKDOWN PREVIEW
-keymap.set("n", "<leader>pm", "<cmd>MarkdownPreviewToggle<CR>", {desc='Extensions - Markdown Preview'})
+keymap.set("n", "<leader>pm", "<cmd>MarkdownPreviewToggle<CR>", {desc='Previews - Markdown'})
 -- PLANTUML PREVIEW
-keymap.set("n", "<leader>ppo", "<cmd>PlantumlOpen<CR>", {desc='PlantUML - Preview'})
+keymap.set("n", "<leader>ppo", "<cmd>PlantumlOpen<CR>", {desc='PlantUML - Start Preview'})
 keymap.set("n", "<leader>ppp", "<cmd>PlantumlStop<CR>", {desc='PLantUML - Stop Preview'})
 keymap.set("n", "<leader>pps", ":PlantumlSave", {desc='PlantUML - Save to'})

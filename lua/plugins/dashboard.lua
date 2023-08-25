@@ -13,7 +13,7 @@ local custom_banner = {
     "⣿⣿⣿⣄⣀⣀⣀⣠⣿⣿⡟⠀⢠⣤⣤⣤⣿⣿⣿⣤⣤⣤⡄⠀⣿⣿⣿⣤⣤⣤⣴⣿⣿⣿⠇⠀⢸⣿⣿⣧⣤⣤⣤⣤⣤⣤⣤",
     "⠈⠻⢿⣿⣿⣿⣿⣿⡿⠟⠁⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⣿⣿⣿⣿⣿⣿⣿⠿⠛⠁⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿",
     "",
-    " 14K502",
+    " D14513",
     "",
 }
 
@@ -79,7 +79,7 @@ require('dashboard').setup {
                 desc = 'Check Additions Update',
                 desc_hl = 'String',
                 key = 'u',
-                keymap = 'SPC u',
+                keymap = 'SPC u a',
                 key_hl = 'Number',
                 action = ':PackerSync'
             },

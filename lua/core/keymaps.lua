@@ -46,10 +46,11 @@ keymap.set("n", "<leader>n", "<cmd>enew<CR>", {desc='Create New Buffer'})
 keymap.set("n", "<leader>h", "<cmd>Dashboard<CR>", {desc='Homepage'})
 
 -- QUIT
-keymap.set("n", "<leader>q", "<cmd>q<CR>", {desc='Quit'})
+keymap.set("n", "<leader>q", "<cmd>q!<CR>", {desc='Quit'})
 
 --SAVE
-keymap.set("n", "<leader>s", "<cmd>w<CR>", {desc='Save'})
+keymap.set("n", "<leader>s", "<cmd>w!<CR>", {desc='Save'})
+keymap.set("n", "<leader>b", "<cmd>wq!<CR>", {desc='Force Save and Quit'})
 
 -- SPELL CHECK
 keymap.set("n", "wc", "z=", {desc='Writer - Correct'})
@@ -94,7 +95,7 @@ keymap.set("n", "<leader>chs", "<cmd>HlSearchLensToggle<CR>", {desc='Highlight -
 -- BAR
 keymap.set("n", "<leader>cbe", "<cmd>:ScrollViewEnable<CR>", {desc='Scrollbar - Enable'})
 keymap.set("n", "<leader>cbd", "<cmd>:ScrollViewDisable<CR>", {desc='Scrollbar - Disable'})
-keymap.set("n", "<leader>cbs", "<cmd>:ScrollViewSync<CR>", {desc='Scrollbar - Sync'})
+keymap.set("n", "<leader>cbs", "<cmd>:ScrollViewRefresh<CR>", {desc='Scrollbar - Sync'})
 -- DISABLE HIGHLIGHT
 keymap.set("n", "<leader>chn", "<cmd>nohl<CR>", {desc='Highlight - Disable'})
 -- TOGGLE AUTO SAVE

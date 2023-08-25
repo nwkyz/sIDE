@@ -84,7 +84,7 @@ return require('packer').startup(function(use)
         "folke/trouble.nvim",
         -- requires = "kyazdani42/nvim-web-devicons",
     }
-    use{'huggingface/hfcc.nvim'} -- 32 HF AI
+    use{'huggingface/llm.nvim'} -- 32 HF AI
     use('alvan/vim-closetag') -- 33 AUTO CLOSETAG
     use('rcarriga/nvim-notify') -- 34 NOTIFY
     use('MunifTanjim/nui.nvim') --35 NUI

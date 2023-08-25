@@ -83,3 +83,8 @@ vim.g.suda_smart_edit = 1
 -- MARKDOWN PREVIEW ==========================================
 vim.g.mkdp_page_title = 'Preview of ${name} - sIDE'
 vim.g.mkdp_auto_close = 0
+
+-- GIT MANAGEMENT ============================================
+-- init.lua
+local neogit = require('neogit')
+neogit.setup {}

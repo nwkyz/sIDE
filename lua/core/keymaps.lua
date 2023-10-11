@@ -64,7 +64,7 @@ keymap.set("n", "<leader>vp", "<cmd>TroubleToggle<CR>", {desc='View - Problems'}
 keymap.set("n", "<leader>vf", "<cmd>TroubleToggle quickfix<CR>", {desc='View - Problems Quickfix'})
 
 -- AI COPILOT
-keymap.set("n", "<leader>a", "<cmd>HFccSuggestion<CR>", {desc='Copilot Suggest'})
+-- keymap.set("n", "<leader>a", "<cmd>LLMSuggestion<CR>", {desc='Copilot Suggest'})
 
 -- VIEW NOTIFY HISTORY
 keymap.set("n", "<leader>vn", "<cmd>Notifications<CR>", {desc='View - Notifications History'})

@@ -38,7 +38,7 @@ return require('packer').startup(function(use)
     use("christoomey/vim-tmux-navigator") -- 7 TMUX NAVIGATOR
     use("nvim-treesitter/nvim-treesitter") -- 8 TREESITTER
     -- use("p00f/nvim-ts-rainbow") -- 9 TS RAINBOW
-    use("HiPhish/nvim-ts-rainbow2")
+    -- use("HiPhish/nvim-ts-rainbow2")
     use { -- MASON
         "williamboman/mason.nvim", -- 10 MASON
         "williamboman/mason-lspconfig.nvim", -- 11 MASON CONFIG

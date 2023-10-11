@@ -4,30 +4,33 @@ local copilot_token = "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" -- You can use our
 
 llm.setup({
     api_token = copilot_token, -- cf Install paragraph
-    model = "bigcode/starcoder", -- can be a model ID or an http(s) endpoint
-    -- parameters that are added to the request body
-    query_params = {
-        max_new_tokens = 128,
-        temperature = 0.2,
-        top_p = 0.95,
-        stop_token = "<|endoftext|>",
-    },
-    -- set this if the model supports fill in the middle
+    tokens_to_clear = { "<EOT>" },
     fim = {
         enabled = true,
-        prefix = "<fim_prefix>",
-        middle = "<fim_middle>",
-        suffix = "<fim_suffix>",
+        prefix = "<PRE> ",
+        middle = " <MID>",
+        suffix = " <SUF>",
     },
-    debounce_ms = 80,
+    model = "codellama/CodeLlama-13b-hf",
+    context_window = 4096,
+    tokenizer = {
+        repository = "codellama/CodeLlama-13b-hf",
+    },
+    query_params = {
+        max_new_tokens = 512,
+        temperature = 0.2,
+        top_p = 0.95,
+        stop_tokens = nil,
+    },
+    -- set this if the model supports fill in the middle
+    debounce_ms = 150,
     accept_keymap = "<Tab>",
     dismiss_keymap = "<S-Tab>",
-    max_context_after = 5000,
-    max_context_before = 5000,
     tls_skip_verify_insecure = false,
-    -- llm-ls integration
+    -- llm-ls configuration, cf llm-ls section
     lsp = {
-        enabled = false,
-        bin_path = "~/.local/share/nvim/llm_nvim/bin",
-    },
+        -- bin_path = vim.api.nvim_call_function("stdpath", { "data" }) .. "/mason/bin/llm-ls",
+        bin_path = nil,
+        version = "0.2.0",
+    }
 })

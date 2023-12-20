@@ -79,7 +79,7 @@ return require('packer').startup(function(use)
         end
     }
     use {'psliwka/vim-smoothie'} -- 31 SMOOTH SCROLLING
-    use {'linty-org/key-menu.nvim'} -- KEY-MENU
+    use {'emmanueltouzery/key-menu.nvim'} -- KEY-MENU
     use {
         "folke/trouble.nvim",
         -- requires = "kyazdani42/nvim-web-devicons",

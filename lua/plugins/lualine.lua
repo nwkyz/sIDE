@@ -11,7 +11,7 @@ require('lualine').setup {
         component_separators = '|',
         section_separators = '',
         theme = 'tokyonight',
-        disabled_filetypes = { 'packer', 'NvimTree' }
+        disabled_filetypes = { 'packer', 'NvimTree', 'dashboard' }
     },
     sections = {
         -- lualine_c = {maximize_status},

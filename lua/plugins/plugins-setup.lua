@@ -123,6 +123,7 @@ return require('packer').startup(function(use)
     use "tyru/open-browser.vim" -- 48 OPEN BROWSER
     use "weirongxu/plantuml-previewer.vim" -- 49 PLANTUML PREVIEW OPTIONAL
     use "malbertzard/inline-fold.nvim" -- 50 INLINE FOLD
+    use "turbio/bracey.vim"
     if packer_bootstrap then
         require('packer').sync()
     end

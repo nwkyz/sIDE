@@ -57,7 +57,7 @@ return require('packer').startup(function(use)
     use "lewis6991/gitsigns.nvim" -- 22 GIT STATUS
     use "skywind3000/vim-terminal-help" -- 23 TERMINAL HELPER
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1', -- 24 TELESCOPE SEARCH
+        'nvim-telescope/telescope.nvim', -- 24 TELESCOPE SEARCH
         requires = { {'nvim-lua/plenary.nvim'} } -- 25 DEPENDENCIES: PLENARY
     }
     use({
@@ -99,7 +99,7 @@ return require('packer').startup(function(use)
             "rcarriga/nvim-notify",
         }
     })
-    use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' } -- 37 GIT MANAGEMENT
+    use { 'TimUntersberger/neogit', branch = 'nightly', requires = 'nvim-lua/plenary.nvim' } -- 37 GIT MANAGEMENT
     --[[ use {
         'declancm/maximize.nvim', -- 38 MAXIMIZE
         config = function() require('maximize').setup {

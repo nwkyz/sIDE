@@ -1,3 +1,4 @@
+vim.g.terminal_emulator='kitty'
 require("plugins.plugins-setup")
 require("core.options")
 require("core.keymaps")

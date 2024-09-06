@@ -99,7 +99,7 @@ return require('packer').startup(function(use)
             "rcarriga/nvim-notify",
         }
     })
-    use { 'TimUntersberger/neogit', branch = 'nightly', requires = 'nvim-lua/plenary.nvim' } -- 37 GIT MANAGEMENT
+    use { 'TimUntersberger/neogit', branch = 'master', requires = 'nvim-lua/plenary.nvim' } -- 37 GIT MANAGEMENT
     --[[ use {
         'declancm/maximize.nvim', -- 38 MAXIMIZE
         config = function() require('maximize').setup {

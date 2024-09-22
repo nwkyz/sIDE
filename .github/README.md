@@ -1,4 +1,4 @@
-![softIDE](https://raw.githubusercontent.com/nwkyz/nwkyz-picbed/main/storage/header.png)
+![softIDE](https://raw.githubusercontent.com/nwkyz/nwkyz-picbed/main/storage/header2.png)
 
 # Contents
 * [**INTRODUCTION**](https://github.com/nwkyz/sIDE/tree/main#introduction)

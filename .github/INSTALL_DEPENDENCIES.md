@@ -11,14 +11,16 @@ Don't worry, this will be easy.
 
 # Dependencies List
 This is a list of the dependencies we need to install. Usually, you don't need to pay attention to these. If you have any problems, you can try to install them manually or submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues).
-1. git
-2. neovim
-3. Python 3
-4. The NerdFont version of your preferred terminal font
-5. gcc/mingw compiler
-6. NodeJS (npm) - Optional for LSP
-7. Java - Optional for PlantUML Preview
-8. PlantUML - Optional for PlantUML Preview
+Before we start, we should make sure we have the following necessary dependencies:
+1. `python3`
+2. `git`
+3. `neovim`
+4. The `NerdFont` version of your preferred terminal font
+5. `gcc`/`mingw` compiler
+6. `xclip` - if you want to use system clipboard on Ubuntu
+7. NodeJS (`npm`) - Optional for LSP
+8. `java` - Optional for PlantUML Preview
+9. `PlantUML` - Optional for PlantUML Preview
 
 # For Linux Users
 ### 1. We need to install `neovim` and `git` first

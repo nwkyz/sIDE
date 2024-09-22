@@ -42,14 +42,15 @@ In the fastest way, only one line of command is needed to install sIDE. This is 
 
 # 0. Before We Start
 Before we start, we should make sure we have the following necessary dependencies:
-* Python 3
-* git
-* neovim
-* The NerdFont version of your preferred terminal font
-* gcc/mingw compiler
-* NodeJS (npm) - Optional for LSP
-* Java - Optional for PlantUML Preview
-* PlantUML - Optional for PlantUML Preview 
+1. `python3`
+2. `git`
+3. `neovim`
+4. The `NerdFont` version of your preferred terminal font
+5. `gcc`/`mingw` compiler
+6. `xclip` - if you want to use system clipboard on Ubuntu
+7. NodeJS (`npm`) - Optional for LSP
+8. `java` - Optional for PlantUML Preview
+9. `PlantUML` - Optional for PlantUML Preview
 
 **⚠️  IMPORTANT:**
 If you already installed a neovim configuration, you should backup your old configuration first or delete them.  

@@ -124,7 +124,7 @@ Run the following command:
 ```bash
 git version && echo "  " && python3 --version && echo "  " && gcc --version && echo "  " && nvim --version
 ```
-We can now go back to [Quick Install](https://github.com/nwkyz/sIDE/tree/main#1-quick-install) if there's no error returned. If there's any problem you can't deal with, just submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues).
+We can now go back to [Quick Install](https://github.com/nwkyz/sIDE/blob/main/.github/README.md#for-linux-and-macos-users) if there's no error returned. If there's any problem you can't deal with, just submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues).
 
 # For Windows Users
 ### 1. Installing `git`, `python` and `neovim`
@@ -147,7 +147,7 @@ At last, **set** the font **as your terminal font**
 * **and not ~~"JetBrains Mono Nerd Font Mono"~~**
 
 ### 3. Back to Installing
-We can now go back to [Quick Install](https://github.com/nwkyz/sIDE/tree/main#1-quick-install) if there's no error returned. If there's any problem you can't deal with, just submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues).
+We can now go back to [Quick Install](https://github.com/nwkyz/sIDE/blob/main/.github/README.md#for-windows-users) if there's no error returned. If there's any problem you can't deal with, just submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues).
 
 # For macOS users
 ### 0. If you don't have Homebrew installed
@@ -181,5 +181,5 @@ At last, **set** the font **as your terminal font**
 * **and not ~~"JetBrains Mono Nerd Font Mono"~~**
 
 ### 3. Back to Installing
-We can now go back to [Quick Install](https://github.com/nwkyz/sIDE/tree/main#1-quick-install) if there's no error returned. If there's any problem you can't deal with, just submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues).
+We can now go back to [Quick Install](https://github.com/nwkyz/sIDE/blob/main/.github/README.md#for-linux-and-macos-users) if there's no error returned. If there's any problem you can't deal with, just submit an issue in [Github Issues](https://github.com/nwkyz/sIDE/issues).
 
